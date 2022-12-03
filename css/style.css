@@ -1,0 +1,342 @@
+@charset "UTF-8";
+/* color */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: normal;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+:where(nav li)::before {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
+input,
+select {
+  word-break: break-all;
+  border: none;
+  appearance: none;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+img,
+svg {
+  width: 100%;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  color: #1A1311;
+}
+
+/*-- breakpoint --*/ /* 名寄について */
+.p-topAbout {
+  padding: 20px 16px 48px;
+}
+
+.p-topAbout__title {
+  margin-top: 32px;
+  font-size: 28px;
+  font-style: "FOT-筑紫Aオールド明朝 Pr6N";
+  text-align: center;
+  color: #50A594;
+}
+
+.p-topAbout__icon {
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 12px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.p-topAbout__text {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 2em;
+}
+
+.p-topAbout__btn {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin-top: 48px;
+  padding: 16px 0;
+  text-align: center;
+  color: #50A594;
+  background-color: #F8F8F8;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+.p-topAbout__btn:before {
+  width: 35px;
+  height: 2px;
+  top: 50%;
+  right: 17px;
+  position: absolute;
+  display: block;
+  content: "";
+  background-color: #50A594;
+}
+.p-topAbout__btn:after {
+  width: 4px;
+  height: 4px;
+  top: 49%;
+  right: 16px;
+  position: absolute;
+  display: block;
+  content: "";
+  background-color: #50A594;
+  border-radius: 50%;
+}
+
+/* 全身で楽しむ */
+.p-topEnjoy {
+  margin-top: 48px;
+  padding: 0 16px 48px;
+}
+
+.p-topEnjoy__title {
+  margin-top: 32px;
+  font-size: 28px;
+  font-style: "FOT-筑紫Aオールド明朝 Pr6N";
+  text-align: center;
+  color: #B9A35A;
+}
+
+.p-topEnjoy__icon {
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 12px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.p-topEnjoy__text {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 2em;
+}
+
+/* アクティビティ */
+.p-topActivity {
+  background-color: #F2F7F6;
+  padding: 48px 16px;
+}
+
+.p-topActivity__icon {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.p-topActivity__title {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-style: "Futura";
+  color: #50A594;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.p-topActivity__subTitle {
+  margin-top: 4px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #50A594;
+}
+
+.p-topActivity__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.p-topActivity__items {
+  width: calc((100% - 19px) / 2);
+}
+.p-topActivity__items:nth-child(n+3) {
+  margin-top: 44px;
+}
+.p-topActivity__items dl {
+  display: flex;
+  align-items: center;
+}
+.p-topActivity__items dl:not(:first-child) {
+  margin-top: 4px;
+}
+.p-topActivity__items dt {
+  padding: 2px 6px;
+  color: #fff;
+  background-color: #50A594;
+  border-radius: 7%;
+}
+.p-topActivity__items dd {
+  color: #6A6A6A;
+}
+
+.p-topActivity__itemsImage {
+  height: 110px;
+}
+
+.p-topActivity__itemsTitle {
+  margin-top: 8px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.p-topActivity__itemsText {
+  margin-top: 8px;
+  font-size: 11px;
+  font-size: 1.1rem;
+  color: #6A6A6A;
+}
+
+/* インスタ */
+.p-topInsta {
+  padding: 48px 16px;
+}
+
+.p-topInsta__icon {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.p-topInsta__title {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-style: "Futura";
+  color: #6A6A6A;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.p-topInsta__subTitle {
+  margin-top: 4px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #6A6A6A;
+}
+
+.p-topNews {
+  padding: 48px 16px;
+  background-color: #F2F6F7;
+}
+
+.p-topNews__icon {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.p-topNews__title {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-style: "Futura";
+  color: #4BB3D9;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.p-topNews__subTitle {
+  margin-top: 4px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #4BB3D9;
+}
+
+.p-topNews__list {
+  margin-top: 32px;
+}
+
+.p-topNews__items {
+  display: flex;
+}
+.p-topNews__items:not(:first-child) {
+  margin-top: 16px;
+}
+
+.p-topNews__itemsImage {
+  width: 104px;
+  height: 68px;
+}
+
+.p-topNews__itemsTextArea {
+  margin-left: 16px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.p-topNews__itemsTitle {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.p-topNews__itemsDate {
+  font-size: 11px;
+  font-size: 1.1rem;
+  color: #6A6A6A;
+}/*# sourceMappingURL=style.css.map */
