@@ -1,0 +1,42 @@
+@use "../foundation/variable" as g;
+
+.l-footer {
+  padding: 32px 45px 16px;
+  font-size: 11px;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: g.$color-06;
+}
+
+.l-footer__logo {
+  width: 48px;
+  height: 55px;
+  margin: 0 auto;
+}
+
+.l-footer__title {
+  margin-top: 8px;
+}
+
+.l-footer__address {
+  margin-top: 8px;
+  color: g.$color-03;
+}
+
+.l-footer__tel {
+  margin: 8px 0;
+  color: g.$color-03;
+}
+
+.l-footer__bottom {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px 0;
+  color: g.$color-03;
+  border-top: 1px solid g.$border-color-01;
+}
+
+.l-footer__copy {
+  margin-top: 8px;
+  color: g.$color-05;
+}
