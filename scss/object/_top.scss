@@ -10,6 +10,9 @@
     content: '';
     display: block;
     padding-bottom: 216%;
+    @include m.mq(pc) {
+      padding-bottom: 57%;
+    }
   }
 }
 
@@ -26,14 +29,22 @@
 .p-topAbout {
   padding: 20px 16px 48px;
   @include m.mq(pc) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
     padding: 80px 0px 48px;
+  }
+}
+
+.p-topAbout__contents {
+  @include m.mq(pc) {
+    width: 45%;
   }
 }
 
 .p-topAbout__img {
   @include m.mq(pc) {
-    width: 600px;
-    margin: 0 auto;
+    width: 580px;
   }
   @include m.mq(sp) {
     width: 100%;
@@ -44,10 +55,13 @@
   margin-top: 32px;
   font-size: 28px;
   font-size: 2.8rem;
-  font-style: "FOT-筑紫Aオールド明朝 Pr6N";
+  font-family: "fot-tsukuaoldmin-pr6n, sans-serif;";
+  font-style: normal;
+  font-weight: 300;
   text-align: center;
   color: g.$color-01;
   @include m.mq(pc) {
+    margin-top: 0px;
     font-size: 32px;
     font-size: 3.2rem;
   }
@@ -70,6 +84,9 @@
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 2em;
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 200;
   @include m.mq(pc) {
     font-size: 16px;
     font-size: 1.6rem;
@@ -88,7 +105,7 @@
   font-size: 16px;
   font-size: 1.6rem;
   @include m.mq(pc) {
-    width: 30%;
+    width: 60%;
     margin: 48px auto 0;
   }
   &:before {
@@ -119,14 +136,21 @@
   margin-top: 48px;
   padding: 0 16px 48px;
   @include m.mq(pc) {
+    display: flex;
+    justify-content: space-between;
     padding: 0px 0px 48px;
+  }
+}
+
+.p-topEnjoy__contents {
+  @include m.mq(pc) {
+    width: 45%;
   }
 }
 
 .p-topEnjoy__img {
   @include m.mq(pc) {
-    width: 600px;
-    margin: 0 auto;
+    width: 580px;
   }
   @include m.mq(sp) {
     width: 100%;
@@ -141,6 +165,7 @@
   text-align: center;
   color: g.$color-02;
   @include m.mq(pc) {
+    margin-top: 0px;
     font-size: 32px;
     font-size: 3.2rem;
   }

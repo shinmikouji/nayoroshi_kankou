@@ -1,4 +1,5 @@
 @use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
 
 .l-footer {
   padding: 32px 45px 16px;
@@ -34,6 +35,9 @@
   padding: 8px 0;
   color: g.$color-03;
   border-top: 1px solid g.$border-color-01;
+  @include m.mq(pc) {
+    width: 100%;
+  }
 }
 
 .l-footer__copy {

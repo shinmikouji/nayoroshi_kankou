@@ -194,6 +194,11 @@ html {
   color: #6A6A6A;
   border-top: 1px solid #E2E2E2;
 }
+@media screen and (min-width: 1025px) {
+  .l-footer__bottom {
+    width: 100%;
+  }
+}
 
 .l-footer__copy {
   margin-top: 8px;
@@ -234,6 +239,11 @@ html {
   display: block;
   padding-bottom: 216%;
 }
+@media screen and (min-width: 1025px) {
+  .p-hero:before {
+    padding-bottom: 57%;
+  }
+}
 
 .p-hero__title {
   position: absolute;
@@ -250,14 +260,22 @@ html {
 }
 @media screen and (min-width: 1025px) {
   .p-topAbout {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
     padding: 80px 0px 48px;
   }
 }
 
 @media screen and (min-width: 1025px) {
+  .p-topAbout__contents {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
   .p-topAbout__img {
-    width: 600px;
-    margin: 0 auto;
+    width: 580px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -270,12 +288,15 @@ html {
   margin-top: 32px;
   font-size: 28px;
   font-size: 2.8rem;
-  font-style: "FOT-筑紫Aオールド明朝 Pr6N";
+  font-family: "fot-tsukuaoldmin-pr6n, sans-serif;";
+  font-style: normal;
+  font-weight: 300;
   text-align: center;
   color: #50A594;
 }
 @media screen and (min-width: 1025px) {
   .p-topAbout__title {
+    margin-top: 0px;
     font-size: 32px;
     font-size: 3.2rem;
   }
@@ -300,6 +321,9 @@ html {
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 2em;
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 200;
 }
 @media screen and (min-width: 1025px) {
   .p-topAbout__text {
@@ -322,7 +346,7 @@ html {
 }
 @media screen and (min-width: 1025px) {
   .p-topAbout__btn {
-    width: 30%;
+    width: 60%;
     margin: 48px auto 0;
   }
 }
@@ -355,14 +379,21 @@ html {
 }
 @media screen and (min-width: 1025px) {
   .p-topEnjoy {
+    display: flex;
+    justify-content: space-between;
     padding: 0px 0px 48px;
   }
 }
 
 @media screen and (min-width: 1025px) {
+  .p-topEnjoy__contents {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
   .p-topEnjoy__img {
-    width: 600px;
-    margin: 0 auto;
+    width: 580px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -381,6 +412,7 @@ html {
 }
 @media screen and (min-width: 1025px) {
   .p-topEnjoy__title {
+    margin-top: 0px;
     font-size: 32px;
     font-size: 3.2rem;
   }
