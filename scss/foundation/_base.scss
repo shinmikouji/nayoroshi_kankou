@@ -1,0 +1,6 @@
+@use "../foundation/variable" as g;
+
+html {
+  font-size: 62.5%;
+  color: g.$color-black;
+}

@@ -1,0 +1,463 @@
+@use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
+
+/* メインビジュアル */
+.p-hero {
+  position: relative;
+  background-image: url('/image/top/slider-sp-01.png');
+  background-size: cover;
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: 216%;
+    @include m.mq(pc) {
+      padding-bottom: 57%;
+    }
+  }
+}
+
+.p-hero__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* 名寄について */
+.p-topAbout {
+  padding: 20px 16px 48px;
+  @include m.mq(pc) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 80px 0px 48px;
+  }
+}
+
+.p-topAbout__contents {
+  @include m.mq(pc) {
+    width: 45%;
+  }
+}
+
+.p-topAbout__img {
+  @include m.mq(pc) {
+    width: 580px;
+  }
+  @include m.mq(sp) {
+    width: 100%;
+  }
+}
+
+.p-topAbout__title {
+  margin-top: 32px;
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-family: "fot-tsukuaoldmin-pr6n, sans-serif;";
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  color: g.$color-01;
+  @include m.mq(pc) {
+    margin-top: 0px;
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+}
+
+.p-topAbout__icon {
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 12px;
+  padding: 24px 0;
+  margin: 0 auto;
+  @include m.mq(pc) {
+    width: 14px;
+    height: 17px;
+  }
+}
+
+.p-topAbout__text {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 2em;
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  @include m.mq(pc) {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}
+
+.p-topAbout__btn {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin-top: 48px;
+  padding: 16px 0;
+  text-align: center;
+  color: g.$color-01;
+  background-color: #F8F8F8;
+  font-size: 16px;
+  font-size: 1.6rem;
+  @include m.mq(pc) {
+    width: 60%;
+    margin: 48px auto 0;
+  }
+  &:before {
+    width: 35px;
+    height: 2px;
+    top: 50%;
+    right: 17px;
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: g.$color-01;
+  }
+  &:after {
+    width: 4px;
+    height: 4px;
+    top: 48%;
+    right: 16px;
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: g.$color-01;
+    border-radius: 50%;
+  }
+}
+
+/* 全身で楽しむ */
+.p-topEnjoy {
+  margin-top: 48px;
+  padding: 0 16px 48px;
+  @include m.mq(pc) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 48px;
+  }
+}
+
+.p-topEnjoy__contents {
+  @include m.mq(pc) {
+    width: 45%;
+  }
+}
+
+.p-topEnjoy__img {
+  @include m.mq(pc) {
+    width: 580px;
+  }
+  @include m.mq(sp) {
+    width: 100%;
+  }
+}
+
+.p-topEnjoy__title {
+  margin-top: 32px;
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-style: "FOT-筑紫Aオールド明朝 Pr6N";
+  text-align: center;
+  color: g.$color-02;
+  @include m.mq(pc) {
+    margin-top: 0px;
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+}
+
+.p-topEnjoy__icon {
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 12px;
+  padding: 24px 0;
+  margin: 0 auto;
+  @include m.mq(pc) {
+    width: 14px;
+    height: 17px;
+  }
+}
+
+.p-topEnjoy__text {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 2em;
+  @include m.mq(pc) {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}
+
+
+/* アクティビティ */
+.p-topActivity {
+  background-color: #F2F7F6;
+  padding: 48px 16px;
+  @include m.mq(pc) {
+    padding: 48px;
+  }
+}
+
+.p-topActivity__icon {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.p-topActivity__title {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-style: "Futura";
+  color: g.$color-01;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.p-topActivity__subTitle {
+  margin-top: 4px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: g.$color-01;
+}
+
+.p-topActivity__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.p-topActivity__items {
+  width: calc((100% - 19px) / 2);
+  @include m.mq(pc) {
+    width: calc((100% - 40px) / 3);
+    &:nth-child(n + 4) {
+      margin-top: 44px;
+    }
+  }
+  @include m.mq(sp) {
+    &:nth-child(n + 3) {
+      margin-top: 44px;
+    }
+  }
+
+  dl {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  dt {
+    padding: 2px 6px;
+    color: g.$color-white;
+    background-color: g.$color-01;
+    border-radius: 7%;
+    @include m.mq(pc) {
+      font-size: 12px;
+      font-size: 1.2rem;
+    }
+  }
+
+  dd {
+    margin-left: 4px;
+    color: g.$color-03;
+    @include m.mq(pc) {
+      margin-left: 8px;
+      font-size: 12px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.p-topActivity__itemsImage {
+  height: 110px;
+  @include m.mq(pc) {
+    height: 250px;
+  }
+}
+
+.p-topActivity__itemsTitle {
+  margin-top: 8px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  @include m.mq(pc) {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+}
+
+.p-topActivity__itemsText {
+  margin-top: 8px;
+  font-size: 11px;
+  font-size: 1.1rem;
+  color: g.$color-03;
+  @include m.mq(pc) {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.8em;
+  }
+}
+
+/* インスタ */
+.p-topInsta {
+  padding: 48px 16px;
+}
+
+.p-topInsta__icon {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.p-topInsta__title {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-style: "Futura";
+  color: g.$color-03;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.p-topInsta__subTitle {
+  margin-top: 4px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: g.$color-03;
+}
+
+.p-topNews {
+  padding: 48px 16px;
+  background-color: #F2F6F7;
+  @include m.mq(pc) {
+    padding: 48px;
+  }
+}
+
+.p-topNews__icon {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.p-topNews__title {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-style: "Futura";
+  color: g.$color-04;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.p-topNews__subTitle {
+  margin-top: 4px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: g.$color-04;
+}
+
+.p-topNews__list {
+  margin-top: 32px;
+}
+
+.p-topNews__items {
+  display: flex;
+
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+
+.p-topNews__itemsImage {
+  width: 104px;
+  height: 68px;
+  @include m.mq(pc) {
+    width: 180px;
+    height: 110px;
+  }
+}
+
+.p-topNews__itemsTextArea {
+  margin-left: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid g.$border-color-01;
+  @include m.mq(pc) {
+    flex: 1;
+  }
+}
+
+.p-topNews__itemsTitle {
+  font-size: 14px;
+  font-size: 1.4rem;
+  @include m.mq(pc) {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}
+
+.p-topNews__itemsDate {
+  margin-top: 8px;
+  font-size: 11px;
+  font-size: 1.1rem;
+  color: g.$color-03;
+  @include m.mq(pc) {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+.p-topNews__btn {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin-top: 48px;
+  padding: 16px 0;
+  text-align: center;
+  color: g.$color-04;
+  background-color: rgba($color: g.$color-04, $alpha: 0.1);
+  font-size: 16px;
+  font-size: 1.6rem;
+  @include m.mq(pc) {
+    width: 30%;
+    margin: 48px auto 0;
+  }
+  &:before {
+    width: 35px;
+    height: 2px;
+    top: 50%;
+    right: 17px;
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: g.$color-04;
+  }
+  &:after {
+    width: 4px;
+    height: 4px;
+    top: 48%;
+    right: 16px;
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: g.$color-04;
+    border-radius: 50%;
+  }
+}

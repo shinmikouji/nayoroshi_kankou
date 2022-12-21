@@ -1,0 +1,8 @@
+@use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
+
+.l-main {
+  @include m.mq(pc) {
+    padding-bottom: 80px;
+  }
+}
