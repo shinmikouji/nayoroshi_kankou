@@ -1,0 +1,25 @@
+@use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
+
+/* メインビジュアル */
+.p-activity__hero {
+  background-image: url('/image/activity/main.jpg');
+  background-size: cover;
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: 56%;
+    @include m.mq(pc) {
+      padding-bottom: 57%;
+    }
+  }
+}
+
+.p-activity__list {
+  padding: 0 16px 48px;
+}
+
+.p-activity__btn {
+  width: 50px;
+  @include m.button(g.$color-01, g.$color-06, 2px, 16px, 33%, 26px, 59%, 25px);
+}
