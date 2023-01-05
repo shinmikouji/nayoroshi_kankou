@@ -1,0 +1,115 @@
+@use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
+
+.c-topActivity {
+  background-color: #F2F7F6;
+  padding: 48px 16px;
+  @include m.mq(pc) {
+    padding: 48px;
+  }
+}
+
+.c-topActivity__icon {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.c-topActivity__title {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-style: "Futura";
+  color: g.$color-01;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.c-topActivity__subTitle {
+  margin-top: 4px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: g.$color-01;
+}
+
+.c-topActivity__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.c-topActivity__items {
+  width: calc((100% - 19px) / 2);
+  @include m.mq(pc) {
+    width: calc((100% - 40px) / 3);
+    &:nth-child(n + 4) {
+      margin-top: 44px;
+    }
+  }
+  @include m.mq(sp) {
+    &:nth-child(n + 3) {
+      margin-top: 44px;
+    }
+  }
+
+  dl {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  dt {
+    padding: 2px 6px;
+    color: g.$color-white;
+    background-color: g.$color-01;
+    border-radius: 7%;
+    @include m.mq(pc) {
+      font-size: 12px;
+      font-size: 1.2rem;
+    }
+  }
+
+  dd {
+    margin-left: 4px;
+    color: g.$color-03;
+    @include m.mq(pc) {
+      margin-left: 8px;
+      font-size: 12px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.c-topActivity__itemsImage {
+  height: 110px;
+  @include m.mq(pc) {
+    height: 250px;
+  }
+}
+
+.c-topActivity__itemsTitle {
+  margin-top: 8px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  @include m.mq(pc) {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+}
+
+.c-topActivity__itemsText {
+  margin-top: 8px;
+  font-size: 11px;
+  font-size: 1.1rem;
+  color: g.$color-03;
+  @include m.mq(pc) {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.8em;
+  }
+}
