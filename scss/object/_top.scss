@@ -94,40 +94,11 @@
 }
 
 .p-topAbout__btn {
-  width: 100%;
-  position: relative;
-  display: block;
   margin-top: 48px;
-  padding: 16px 0;
-  text-align: center;
-  color: g.$color-01;
-  background-color: #F8F8F8;
-  font-size: 16px;
-  font-size: 1.6rem;
+  @include m.button(g.$color-01, g.$color-09, 35px, 2px, 50%, 17px, 48%, 17px, g.$color-06);
   @include m.mq(pc) {
     width: 60%;
     margin: 48px auto 0;
-  }
-  &:before {
-    width: 35px;
-    height: 2px;
-    top: 50%;
-    right: 17px;
-    position: absolute;
-    display: block;
-    content: "";
-    background-color: g.$color-01;
-  }
-  &:after {
-    width: 4px;
-    height: 4px;
-    top: 48%;
-    right: 16px;
-    position: absolute;
-    display: block;
-    content: "";
-    background-color: g.$color-01;
-    border-radius: 50%;
   }
 }
 
@@ -310,39 +281,10 @@
 }
 
 .p-topNews__btn {
-  width: 100%;
-  position: relative;
-  display: block;
   margin-top: 48px;
-  padding: 16px 0;
-  text-align: center;
-  color: g.$color-04;
-  background-color: rgba($color: g.$color-04, $alpha: 0.1);
-  font-size: 16px;
-  font-size: 1.6rem;
+  @include m.button(g.$color-04, rgba($color: g.$color-04, $alpha: 0.1), 35px, 2px, 50%, 17px, 48%, 16px, g.$color-06);
   @include m.mq(pc) {
     width: 30%;
     margin: 48px auto 0;
-  }
-  &:before {
-    width: 35px;
-    height: 2px;
-    top: 50%;
-    right: 17px;
-    position: absolute;
-    display: block;
-    content: "";
-    background-color: g.$color-04;
-  }
-  &:after {
-    width: 4px;
-    height: 4px;
-    top: 48%;
-    right: 16px;
-    position: absolute;
-    display: block;
-    content: "";
-    background-color: g.$color-04;
-    border-radius: 50%;
   }
 }
