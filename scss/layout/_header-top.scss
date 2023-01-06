@@ -1,4 +1,5 @@
 @use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
 
 .l-headerTop {
   .l-header__icon {
@@ -55,12 +56,23 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 100%;
     transition: left 0.5s;
+    @include m.mq(sp) {
+      left: 100%;
+    }
+    @include m.mq(pc) {
+      width: 600px;
+      right: -600px;
+    }
   }
 
   .l-header__menus.animation2 {
-    left: 0;
+    @include m.mq(sp) {
+      left: 0;
+    }
+    @include m.mq(pc) {
+      right: 0;
+    }
     z-index: 2;
   }
 
