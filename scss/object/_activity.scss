@@ -20,6 +20,6 @@
 }
 
 .p-activity__btn {
-  width: 50px;
-  @include m.button(g.$color-01, g.$color-06, 2px, 16px, 33%, 26px, 59%, 25px);
+  margin-top: 48px;
+  @include m.button(g.$color-01, g.$color-09, 2px, 16px, 33%, 26px, 59%, 25px, g.$color-06);
 }

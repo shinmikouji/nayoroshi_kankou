@@ -13,21 +13,17 @@ $breakpoint: (
   }
 }
 
-@mixin button($color, $bg-color: transparent, $before-width, $before-height, $before-top, $before-right, $after-top, $after-right ) {
+@mixin button($color, $bg-color: transparent, $before-width, $before-height, $before-top, $before-right, $after-top, $after-right, $border-color: transparent ) {
   width: 100%;
   position: relative;
   display: block;
-  margin-top: 48px;
   padding: 16px 0;
   text-align: center;
   color: $color;
   background-color: $bg-color;
+  border: 1px solid $border-color;
   font-size: 16px;
   font-size: 1.6rem;
-  @include mq(pc) {
-    width: 30%;
-    margin: 48px auto 0;
-  }
   &:before {
     width: $before-width;
     height: $before-height;
