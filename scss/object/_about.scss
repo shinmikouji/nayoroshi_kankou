@@ -162,6 +162,32 @@
 
 .p-about__accessItemImage {
   margin-top: 40px;
+  text-align: center;
+  @include m.mq(pc) {
+    text-align: left;
+  }
+  img {
+    width: 279px;
+    height: 272px;
+    @include m.mq(pc) {
+      width: 279px;
+    }
+  }
+}
+
+.p-about__accessItemImage--second {
+  margin-top: 40px;
+  text-align: center;
+  @include m.mq(pc) {
+    text-align: left;
+  }
+  img {
+    width: 343px;
+    height: 243px;
+    @include m.mq(pc) {
+      width: 343px;
+    }
+  }
 }
 
 .p-about__links {

@@ -1375,6 +1375,40 @@ html {
 
 .p-about__accessItemImage {
   margin-top: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 1025px) {
+  .p-about__accessItemImage {
+    text-align: left;
+  }
+}
+.p-about__accessItemImage img {
+  width: 279px;
+  height: 272px;
+}
+@media screen and (min-width: 1025px) {
+  .p-about__accessItemImage img {
+    width: 279px;
+  }
+}
+
+.p-about__accessItemImage--second {
+  margin-top: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 1025px) {
+  .p-about__accessItemImage--second {
+    text-align: left;
+  }
+}
+.p-about__accessItemImage--second img {
+  width: 343px;
+  height: 243px;
+}
+@media screen and (min-width: 1025px) {
+  .p-about__accessItemImage--second img {
+    width: 343px;
+  }
 }
 
 .p-about__links {
