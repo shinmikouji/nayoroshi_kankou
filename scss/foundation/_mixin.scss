@@ -46,3 +46,20 @@ $breakpoint: (
     border-radius: 50%;
   }
 }
+
+@mixin title($color) {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-style: "Futura";
+  color: $color;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+@mixin subTitle($color) {
+  margin-top: 4px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: $color;
+}

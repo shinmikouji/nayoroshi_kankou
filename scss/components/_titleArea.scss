@@ -1,0 +1,43 @@
+@use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
+
+.c-titleArea__icon {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.c-titleArea__title--black {
+  @include m.title(g.$color-black);
+}
+
+.c-titleArea__title--green {
+  @include m.title(g.$color-01);
+}
+
+.c-titleArea__title--blue {
+  @include m.title(g.$color-04);
+}
+
+.c-titleArea__title--gray {
+  @include m.title(g.$color-03);
+}
+
+.c-titleArea__subTitle--black {
+  @include m.subTitle(g.$color-black);
+}
+
+.c-titleArea__subTitle--green {
+  @include m.subTitle(g.$color-01);
+}
+
+.c-titleArea__subTitle--blue {
+  @include m.subTitle(g.$color-04);
+}
+
+.c-titleArea__subTitle--gray {
+  @include m.subTitle(g.$color-03);
+}

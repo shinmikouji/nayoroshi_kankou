@@ -1,0 +1,262 @@
+@use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
+
+/* メインビジュアル */
+.p-about__hero {
+  background-image: url('/image/about/main.jpg');
+  background-size: cover;
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: 156%;
+    @include m.mq(pc) {
+      padding-bottom: 57%;
+    }
+  }
+}
+
+.p-about__heroTextArea {
+  padding: 0 0 40px 48px;
+}
+
+.p-about__heroTextAreaCont {
+  margin-top: -130px;
+  padding: 24px;
+  letter-spacing: 0.1em;
+  background-color: g.$color-08;
+}
+
+.p-about__heroTextAreaTitle {
+  padding-top: 14px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  border-top: 2px solid g.$color-black;
+}
+
+.p-about__heroTextAreaTop {
+  border-bottom: 2px solid g.$color-black;
+}
+
+.p-about__heroTextAreaText {
+  padding-top: 16px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.p-about__heroTextAreaIcon {
+  padding: 16px 0;
+  text-align: center;
+  img {
+    width: 71px;
+    height: 81px;
+  }
+}
+
+.p-about__imageList {
+  .p-about__imageItem:first-child {
+    img {
+      width: 242px;
+      height: 161px;
+    }
+  }
+
+  .p-about__imageItem:nth-child(2) {
+    margin-top: 56px;
+    text-align: center;
+    img {
+      width: 207px;
+      height: 207px;
+    }
+  }
+
+  .p-about__imageItem:nth-child(3) {
+    margin-top: 56px;
+    text-align: right;
+    img {
+      width: 328px;
+      height: 218px;
+    }
+  }
+}
+
+.p-about__guide {
+  margin-top: 80px;
+  padding: 0 24px;
+}
+
+.p-about__guideItem {
+  margin-top: 48px;
+  padding: 24px 24px 56px;
+  background-color: g.$color-10;
+}
+
+.p-about__guideItemImage {
+
+}
+
+.p-about__guideItemTitle {
+  margin-top: 16px;
+  padding: 16px 0;
+  font-size: 20px;
+  font-size: 2rem;
+  border-top: 1px solid g.$color-black;
+  border-bottom: 1px solid g.$color-black;
+  text-align: center;
+}
+
+.p-about__guideItemSubtitle {
+  margin-top: 24px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.p-about__access {
+  margin-top: 80px;
+  padding: 48px 16px;
+  background-color: g.$color-09;
+}
+
+.p-about__accessList {
+  margin-top: 48px;
+}
+
+.p-about__accessItem:nth-child(2) {
+  margin-top: 48px;
+}
+
+.p-about__accessItem:nth-child(3),
+.p-about__accessItem:last-child {
+  margin-top: 32px;
+}
+
+.p-about__accessItem dl div{
+  display: flex;
+  align-items: center;
+  padding: 16px 0px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  border-bottom: 1px solid g.$border-color-01;
+  dt {
+    width: 25%;
+    font-weight: 600;
+    span {
+      font-size: 11px;
+      font-size: 1.1rem;
+      font-weight: normal;
+    }
+  }
+  dd {
+    margin-left: 40px;
+  }
+}
+
+.p-about__accessItemTitle {
+  padding-bottom: 16px;
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 1px solid g.$color-black;
+}
+
+.p-about__accessItemImage {
+  margin-top: 40px;
+  text-align: center;
+  @include m.mq(pc) {
+    text-align: left;
+  }
+  img {
+    width: 279px;
+    height: 272px;
+    @include m.mq(pc) {
+      width: 279px;
+    }
+  }
+}
+
+.p-about__accessItemImage--second {
+  margin-top: 40px;
+  text-align: center;
+  @include m.mq(pc) {
+    text-align: left;
+  }
+  img {
+    width: 343px;
+    height: 243px;
+    @include m.mq(pc) {
+      width: 343px;
+    }
+  }
+}
+
+.p-about__links {
+  margin-top: 80px;
+  padding: 0 16px 80px;
+}
+
+.p-about__linksIcon {
+  display: flex;
+  align-items: center;
+  width: 16px;
+  height: 18px;
+  margin: 0 auto;
+  @include m.mq(pc) {
+    width: 14px;
+    height: 17px;
+  }
+}
+
+.p-about__linksTitle {
+  margin-top: 9px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.p-about__linksImageList--big {
+  margin-top: 48px;
+
+  .p-about__linksImageItems {
+    img {
+      width: 343px;
+      height: 227px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+
+  .p-about__linksImageItemsText {
+    margin-top: 16px;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+.p-about__linksImageList--small {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .p-about__linksImageItems {
+    width: calc((100% - 17px) / 2);
+    img {
+      width: 162px;
+      height: 108px;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 40px;
+    }
+  }
+
+  .p-about__linksImageItemsText {
+    margin-top: 16px;
+    font-size: 11px;
+    font-size: 1.1rem;
+  }
+}
