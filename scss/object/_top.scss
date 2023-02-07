@@ -4,14 +4,17 @@
 /* メインビジュアル */
 .p-hero {
   position: relative;
-  background-image: url('/image/top/slider-sp-01.png');
+  background-image: url('/image/top/main-sp.png');
   background-size: cover;
+  @include m.mq(pc) {
+    background-image: url('/image/top/main.png');
+  }
   &:before {
     content: '';
     display: block;
     padding-bottom: 216%;
     @include m.mq(pc) {
-      padding-bottom: 57%;
+      padding-bottom: 56%;
     }
   }
 }

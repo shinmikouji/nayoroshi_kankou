@@ -525,8 +525,13 @@ html {
 /* メインビジュアル */
 .p-hero {
   position: relative;
-  background-image: url("/image/top/slider-sp-01.png");
+  background-image: url("/image/top/main-sp.png");
   background-size: cover;
+}
+@media screen and (min-width: 1025px) {
+  .p-hero {
+    background-image: url("/image/top/main.png");
+  }
 }
 .p-hero:before {
   content: "";
@@ -535,7 +540,7 @@ html {
 }
 @media screen and (min-width: 1025px) {
   .p-hero:before {
-    padding-bottom: 57%;
+    padding-bottom: 56%;
   }
 }
 
@@ -1234,7 +1239,7 @@ html {
 }
 @media screen and (min-width: 1025px) {
   .p-about__hero:before {
-    padding-bottom: 57%;
+    padding-bottom: 56%;
   }
 }
 
@@ -1281,6 +1286,12 @@ html {
   width: 242px;
   height: 161px;
 }
+@media screen and (min-width: 1025px) {
+  .p-about__imageList .p-about__imageItem:first-child img {
+    width: 450px;
+    height: auto;
+  }
+}
 .p-about__imageList .p-about__imageItem:nth-child(2) {
   margin-top: 56px;
   text-align: center;
@@ -1289,6 +1300,12 @@ html {
   width: 207px;
   height: 207px;
 }
+@media screen and (min-width: 1025px) {
+  .p-about__imageList .p-about__imageItem:nth-child(2) img {
+    width: 350px;
+    height: auto;
+  }
+}
 .p-about__imageList .p-about__imageItem:nth-child(3) {
   margin-top: 56px;
   text-align: right;
@@ -1296,6 +1313,12 @@ html {
 .p-about__imageList .p-about__imageItem:nth-child(3) img {
   width: 328px;
   height: 218px;
+}
+@media screen and (min-width: 1025px) {
+  .p-about__imageList .p-about__imageItem:nth-child(3) img {
+    width: 450px;
+    height: auto;
+  }
 }
 
 .p-about__guide {
