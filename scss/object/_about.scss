@@ -10,7 +10,7 @@
     display: block;
     padding-bottom: 156%;
     @include m.mq(pc) {
-      padding-bottom: 57%;
+      padding-bottom: 56%;
     }
   }
 }
@@ -59,6 +59,10 @@
     img {
       width: 242px;
       height: 161px;
+      @include m.mq(pc) {
+        width: 450px;
+        height: auto;
+      }
     }
   }
 
@@ -68,6 +72,10 @@
     img {
       width: 207px;
       height: 207px;
+      @include m.mq(pc) {
+        width: 350px;
+        height: auto;
+      }
     }
   }
 
@@ -77,6 +85,10 @@
     img {
       width: 328px;
       height: 218px;
+      @include m.mq(pc) {
+        width: 450px;
+        height: auto;
+      }
     }
   }
 }
