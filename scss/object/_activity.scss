@@ -3,23 +3,114 @@
 
 /* メインビジュアル */
 .p-activity__hero {
-  background-image: url('/image/activity/main.jpg');
+  background-image: url('/image/activity/main-sp.jpg');
   background-size: cover;
+  @include m.mq(pc) {
+    background-image: url('/image/activity/main.jpg');
+  }
   &:before {
     content: '';
     display: block;
     padding-bottom: 56%;
     @include m.mq(pc) {
-      padding-bottom: 57%;
+      padding-bottom: 28%;
     }
   }
 }
 
+.p-activity {
+  padding: 32px 16px 48px;
+  @include m.mq(pc) {
+    padding: 80px 0;
+  }
+}
+
 .p-activity__list {
-  padding: 0 16px 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+  @include m.mq(pc) {
+    gap: 24px;
+  }
+}
+
+.p-activity__items {
+  width: calc((100% - 19px) / 2);
+  @include m.mq(pc) {
+    width: calc((100% - 24px * 3) / 4);
+    &:nth-child(n + 5) {
+      margin-top: 64px;
+    }
+  }
+  @include m.mq(sp) {
+    &:nth-child(n + 3) {
+      margin-top: 44px;
+    }
+  }
+
+  dl {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  dt {
+    padding: 2px 6px;
+    color: g.$color-white;
+    background-color: g.$color-01;
+    border-radius: 7%;
+    @include m.mq(pc) {
+      font-size: 12px;
+      font-size: 1.2rem;
+    }
+  }
+
+  dd {
+    margin-left: 4px;
+    color: g.$color-03;
+    @include m.mq(pc) {
+      margin-left: 8px;
+      font-size: 12px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.p-activity__itemsImage {
+  height: 110px;
+  @include m.mq(pc) {
+    height: 148px;
+  }
+}
+
+.p-activity__itemsTitle {
+  margin-top: 8px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  @include m.mq(pc) {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+}
+
+.p-activity__itemsText {
+  margin-top: 8px;
+  font-size: 11px;
+  font-size: 1.1rem;
+  color: g.$color-03;
+  @include m.mq(pc) {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.8em;
+  }
 }
 
 .p-activity__btn {
   margin-top: 48px;
   @include m.button(g.$color-01, g.$color-09, 2px, 16px, 33%, 26px, 59%, 25px, g.$color-06);
+  @include m.mq(pc) {
+    width: 36%;
+    margin: 64px auto 0;
+  }
 }
