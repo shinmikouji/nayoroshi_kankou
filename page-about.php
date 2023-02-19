@@ -1,39 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="/js/main.js"></script>
-  <title>名寄市</title>
-</head>
-
-<body>
-  <header class="l-headerUnder">
-    <div class="c-display--sp">
-      <div class="l-header__logo">
-        <img src="/image/header-logo.svg" alt="名寄市のロゴ">
-      </div>
-    </div>
-    <div class="l-header__icon" id="open">
-      <span class="top bar"></span>
-      <span class="middle bar"></span>
-      <span class="bottom bar"></span>
-    </div>
-    <nav class="l-header__menus">
-      <ul class="l-header__menuList">
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">ACTIVITY</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">HOW to USE</a></li>
-      </ul>
-    </nav>
-  </header>
+<?php /* Template Name:about   */ ?>
+<?php get_header(); ?>
   <main>
     <section class="p-about__hero"></section>
     <section class="p-about__heroTextArea">
@@ -42,7 +8,7 @@
           <div class="p-about__heroTextAreaTop">
             <h2 class="p-about__heroTextAreaTitle">N GATEWAY について</h2>
             <div class="p-about__heroTextAreaIcon">
-              <img src="/image/logo1.svg" alt="名寄についてに関してのアイコン">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/logo1.svg" alt="名寄についてに関してのアイコン">
             </div>
           </div>
           <p class="p-about__heroTextAreaText">
@@ -54,25 +20,25 @@
     <div class="c-contentWidth">
       <ul class="p-about__imageList">
         <li class="p-about__imageItem">
-          <img src="/image/about/img-01.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-01.jpg" alt="">
         </li>
         <li class="p-about__imageItem">
-          <img src="/image/about/img-02.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-02.jpg" alt="">
         </li>
         <li class="p-about__imageItem">
-          <img src="/image/about/img-03.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-03.jpg" alt="">
         </li>
       </ul>
     </div>
     <section class="p-about__guide">
       <div class="c-contentWidth">
         <div class="c-titleArea__icon">
-          <img src="/image/about/icon-01.svg" alt="アクティビティについてに関してのアイコン">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/about/icon-01.svg" alt="アクティビティについてに関してのアイコン">
         </div>
         <h1 class="c-titleArea__title--black">GYDE</h1>
         <p class="c-titleArea__subTitle--black">ガイド紹介</p>
         <div class="p-about__guideItem">
-          <img src="/image/about/img-04.jpg" alt="" class="p-about__guideItemImage">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-04.jpg" alt="" class="p-about__guideItemImage">
           <div class="p-about__guideItemCont">
             <h2 class="p-about__guideItemTitle">森 和季</h2>
             <p class="p-about__guideItemSubtitle">
@@ -85,7 +51,7 @@
     <section class="p-about__access">
       <div class="c-contentWidth">
         <div class="c-titleArea__icon">
-          <img src="/image/about/icon-01.svg" alt="アクティビティについてに関してのアイコン">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/about/icon-01.svg" alt="アクティビティについてに関してのアイコン">
         </div>
         <h1 class="c-titleArea__title--black">ACCESS</h1>
         <p class="c-titleArea__subTitle--black">アクセス</p>
@@ -109,7 +75,7 @@
               </dl>
             </div>
             <div class="p-about__accessItemImage">
-              <img src="/image/about/img-05.png" alt="日本地図に関しての画像">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-05.png" alt="日本地図に関しての画像">
             </div>
           </li>
           <li class="p-about__accessItem">
@@ -127,7 +93,7 @@
               </dl>
             </div>
             <div class="p-about__accessItemImage--second c-display--pc">
-              <img src="/image/about/img-06.png" alt="北海道地図に関しての画像">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-06.png" alt="北海道地図に関しての画像">
             </div>
           </li>
           <li class="p-about__accessItem">
@@ -159,7 +125,7 @@
                 </div>
               </dl>
               <div class="p-about__accessItemImage--second c-display--sp">
-                <img src="/image/about/img-06.png" alt="北海道地図に関しての画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-06.png" alt="北海道地図に関しての画像">
               </div>
             </div>
           </li>
@@ -169,52 +135,36 @@
     <section class="p-about__links">
       <div class="c-contentWidth">
         <div class="p-about__linksIcon">
-          <img src="/image/top/icon-01.svg" alt="名寄についてに関してのアイコン">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/top/icon-01.svg" alt="名寄についてに関してのアイコン">
         </div>
         <h2 class="p-about__linksTitle">
           リンク集
         </h2>
         <ul class="p-about__linksImageList--big">
           <li class="p-about__linksImageItems">
-            <img src="/image/about/img-07.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-07.jpg" alt="">
             <p class="p-about__linksImageItemsText">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           </li>
           <li class="p-about__linksImageItems">
-            <img src="/image/about/img-07.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-07.jpg" alt="">
             <p class="p-about__linksImageItemsText">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           </li>
         </ul>
         <ul class="p-about__linksImageList--small">
           <li class="p-about__linksImageItems">
-            <img src="/image/about/img-08.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-08.jpg" alt="">
             <p class="p-about__linksImageItemsText">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           </li>
           <li class="p-about__linksImageItems">
-            <img src="/image/about/img-08.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-08.jpg" alt="">
             <p class="p-about__linksImageItemsText">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           </li>
           <li class="p-about__linksImageItems">
-            <img src="/image/about/img-08.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-08.jpg" alt="">
             <p class="p-about__linksImageItemsText">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           </li>
         </ul>
       </div>
     </section>
   </main>
-  <footer class="l-footer">
-    <div class="c-contentWidth">
-      <div class="l-footer__logo">
-        <img src="/image/logo1.svg" alt="名寄市観光に関してのアイコン">
-      </div>
-      <p class="l-footer__title">NPO法人 なよろ観光まちづくり協会</p>
-      <p class="l-footer__address">〒096-0001 北海道名寄市東1条南7丁目1番地10駅前交流プラザよろーな1F</p>
-      <p class="l-footer__tel">TEL:01654-9-6711 | FAX:01654-9-6712</p>
-      <div class="l-footer__bottom">
-        <p class="l-footer__bottomText">プライバシーポリシー</p>
-      </div>
-      <p class="l-footer__copy">Copyright © Kao Beauty Brands. All Rights Reserved.</p>
-    </div>
-  </footer>
-</body>
-
-</html>
+  <?php get_footer(); ?>

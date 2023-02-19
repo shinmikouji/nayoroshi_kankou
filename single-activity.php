@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="/js/main.js"></script>
-  <title>名寄市</title>
-</head>
-
-<body>
-  <header class="l-headerUnder">
-    <div class="c-display--sp">
-      <div class="l-header__logo">
-        <img src="/image/header-logo.svg" alt="名寄市のロゴ">
-      </div>
-    </div>
-    <div class="l-header__icon" id="open">
-      <span class="top bar"></span>
-      <span class="middle bar"></span>
-      <span class="bottom bar"></span>
-    </div>
-    <nav class="l-header__menus">
-      <ul class="l-header__menuList">
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">ACTIVITY</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">HOW to USE</a></li>
-      </ul>
-    </nav>
-  </header>
+<?php get_header(); ?>
   <main>
     <section class="p-activity-detail__hero"></section>
     <section class="p-activity-detail__slider">
@@ -50,7 +15,7 @@
     <section class="p-activity-detail">
       <div class="c-contentWidth">
         <div class="p-activity-detail__icon">
-          <img src="/image/top/icon-01.svg" alt="名寄についてに関してのアイコン">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/top/icon-01.svg" alt="名寄についてに関してのアイコン">
         </div>
         <h2 class="p-activity-detail__title">
           アクティビティ詳細
@@ -101,7 +66,7 @@
     <section class="p-activity-detail__video">
       <div class="c-contentWidth">
         <div class="p-activity-detail__icon">
-          <img src="/image/top/icon-01.svg" alt="名寄についてに関してのアイコン">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/top/icon-01.svg" alt="名寄についてに関してのアイコン">
         </div>
         <h2 class="p-activity-detail__title">
           動画
@@ -110,24 +75,8 @@
     </section>
     <div class="c-contentWidth">
       <div class="p-activity-detail__btn--back">
-        <a href="">一覧へ戻る</a>
+        <a href="<?php echo get_post_type_archive_link('activity'); ?>">一覧へ戻る</a>
       </div>
     </div>
   </main>
-  <footer class="l-footer">
-    <div class="c-contentWidth">
-      <div class="l-footer__logo">
-        <img src="/image/logo1.svg" alt="名寄市観光に関してのアイコン">
-      </div>
-      <p class="l-footer__title">NPO法人 なよろ観光まちづくり協会</p>
-      <p class="l-footer__address">〒096-0001 北海道名寄市東1条南7丁目1番地10駅前交流プラザよろーな1F</p>
-      <p class="l-footer__tel">TEL:01654-9-6711 | FAX:01654-9-6712</p>
-      <div class="l-footer__bottom">
-        <p class="l-footer__bottomText">プライバシーポリシー</p>
-      </div>
-      <p class="l-footer__copy">Copyright © Kao Beauty Brands. All Rights Reserved.</p>
-    </div>
-  </footer>
-</body>
-
-</html>
+  <?php get_footer(); ?>

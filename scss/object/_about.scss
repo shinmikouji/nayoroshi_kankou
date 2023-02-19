@@ -3,10 +3,10 @@
 
 /* メインビジュアル */
 .p-about__hero {
-  background-image: url('/image/about/main-sp.jpg');
+  background-image: url('../image/about/main-sp.jpg');
   background-size: cover;
   @include m.mq(pc) {
-    background-image: url('/image/about/main.jpg');
+    background-image: url('../image/about/main.jpg');
   }
   &:before {
     content: '';

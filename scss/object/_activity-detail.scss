@@ -3,14 +3,17 @@
 
 /* メインビジュアル */
 .p-activity-detail__hero {
-  background-image: url('/image/activity-detail/main.jpg');
+  background-image: url('../image/activity-detail/main.jpg');
   background-size: cover;
+  @include m.mq(pc) {
+    background-image: url('../image/activity/main.jpg');
+  }
   &:before {
     content: '';
     display: block;
     padding-bottom: 66%;
     @include m.mq(pc) {
-      padding-bottom: 57%;
+      padding-bottom: 28%;
     }
   }
 }
