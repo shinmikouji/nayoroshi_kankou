@@ -26,24 +26,22 @@
 }
 
 .p-about__heroTextAreaCont {
+  background-color: g.$color-08;
+  letter-spacing: 0.1em;
   margin-top: -130px;
   padding: 24px;
-  letter-spacing: 0.1em;
-  background-color: g.$color-08;
   @include m.mq(pc) {
     padding-bottom: 40px;
   }
 }
 
 .p-about__heroTextAreaTitle {
-  padding-top: 14px;
-  font-size: 16px;
+  border-top: 2px solid g.$color-black;
   font-size: 1.6rem;
   font-weight: 600;
   text-align: center;
-  border-top: 2px solid g.$color-black;
+  padding-top: 14px;
   @include m.mq(pc) {
-    font-size: 28px;
     font-size: 2.8rem;
   }
 }
@@ -53,21 +51,19 @@
 }
 
 .p-about__heroTextAreaText {
-  padding-top: 16px;
-  font-size: 14px;
   font-size: 1.4rem;
+  padding-top: 16px;
   @include m.mq(pc) {
-    font-size: 16px;
     font-size: 1.6rem;
   }
 }
 
 .p-about__heroTextAreaIcon {
-  padding: 16px 0;
   text-align: center;
+  padding: 16px 0;
   img {
-    width: 71px;
     height: 81px;
+    width: 71px;
   }
 }
 
@@ -79,22 +75,22 @@
 
   .p-about__imageItem {
     @include m.mq(pc) {
-      position: absolute;
       display: inline-block;
+      position: absolute;
     }
   }
 
   .p-about__imageItem:first-child {
     @include m.mq(pc) {
-      top: 0;
       left: 0;
+      top: 0;
     }
     img {
-      width: 242px;
       height: 161px;
+      width: 242px;
       @include m.mq(pc) {
-        width: 379px;
         height: auto;
+        width: 379px;
       }
     }
   }
@@ -103,9 +99,9 @@
     margin-top: 56px;
     text-align: center;
     @include m.mq(pc) {
-      top: 394px;
-      right: 421px;
       margin-top: 0;
+      right: 421px;
+      top: 394px;
     }
     img {
       width: 207px;
@@ -121,16 +117,16 @@
     margin-top: 56px;
     text-align: right;
     @include m.mq(pc) {
-      top: 125px;
-      right: 0;
       margin-top: 0;
+      right: 0;
+      top: 125px;
     }
     img {
-      width: 328px;
       height: 218px;
+      width: 328px;
       @include m.mq(pc) {
-        width: 515px;
         height: auto;
+        width: 515px;
       }
     }
   }
@@ -145,9 +141,9 @@
 }
 
 .p-about__guideItem {
+  background-color: g.$color-10;
   margin-top: 48px;
   padding: 24px 24px 56px;
-  background-color: g.$color-10;
   @include m.mq(pc) {
     display: flex;
     padding-right: 100px;
@@ -157,8 +153,8 @@
 
 .p-about__guideItemImage {
   @include m.mq(pc) {
-    width: 480px;
     height: auto;
+    width: 480px;
   }
 }
 
@@ -169,19 +165,17 @@
 }
 
 .p-about__guideItemTitle {
-  margin-top: 16px;
-  padding: 16px 0;
-  font-size: 20px;
-  font-size: 2rem;
   border-top: 1px solid g.$color-black;
   border-bottom: 1px solid g.$color-black;
+  font-size: 2rem;
+  margin-top: 16px;
+  padding: 16px 0;
   text-align: center;
 }
 
 .p-about__guideItemSubtitle {
-  margin-top: 24px;
-  font-size: 14px;
   font-size: 1.4rem;
+  margin-top: 24px;
   @include m.mq(pc) {
     line-height: 2em;
   }
@@ -189,9 +183,9 @@
 
 /* アクセス */
 .p-about__access {
+  background-color: g.$color-09;
   margin-top: 80px;
   padding: 48px 16px;
-  background-color: g.$color-09;
 }
 
 .p-about__accessList {
@@ -227,24 +221,22 @@
   }
 
   dl {
-    padding-top: 16px;
     border-top: 1px solid g.$color-black;
+    padding-top: 16px;
     div {
-      display: flex;
       align-items: center;
-      padding: 16px 0px;
-      font-size: 14px;
-      font-size: 1.4rem;
       border-bottom: 1px solid g.$border-color-01;
+      display: flex;
+      font-size: 1.4rem;
+      padding: 16px 0px;
       &:first-child {
         padding-top: 0;
       }
     }
     dt {
-      width: 25%;
       font-weight: 600;
+      width: 25%;
       span {
-        font-size: 11px;
         font-size: 1.1rem;
         font-weight: normal;
       }
@@ -256,10 +248,9 @@
 }
 
 .p-about__accessItemTitle {
-  padding-bottom: 16px;
-  font-size: 20px;
   font-size: 2rem;
   font-weight: 600;
+  padding-bottom: 16px;
 }
 
 .p-about__accessItemImage {
@@ -270,11 +261,11 @@
     text-align: left;
   }
   img {
-    width: 279px;
     height: 272px;
+    width: 279px;
     @include m.mq(pc) {
-      width: 416px;
       height: fit-content;
+      width: 416px;
     }
   }
 }
@@ -287,11 +278,11 @@
     text-align: left;
   }
   img {
-    width: 343px;
     height: 243px;
+    width: 343px;
     @include m.mq(pc) {
-      width: 416px;
       height: fit-content;
+      width: 416px;
     }
   }
 }
@@ -306,21 +297,19 @@
 }
 
 .p-about__linksIcon {
-  display: flex;
   align-items: center;
-  width: 16px;
+  display: flex;
   height: 18px;
   margin: 0 auto;
+  width: 16px;
 }
 
 .p-about__linksTitle {
-  margin-top: 9px;
-  font-size: 16px;
   font-size: 1.6rem;
   font-weight: 600;
+  margin-top: 9px;
   text-align: center;
   @include m.mq(pc) {
-    font-size: 20px;
     font-size: 2rem;
   }
 }
@@ -337,11 +326,13 @@
       width: calc((100% - 48px) / 2);
     }
     img {
-      width: 343px;
+      display: block;
       height: 227px;
+      margin: 0 auto;
+      width: 343px;
       @include m.mq(pc) {
-        width: 100%;
         height: fit-content;
+        width: 100%;
       }
     }
 
@@ -354,18 +345,17 @@
   }
 
   .p-about__linksImageItemsText {
-    margin-top: 16px;
-    font-size: 14px;
     font-size: 1.4rem;
     line-height: 2em;
+    margin-top: 16px;
   }
 }
 
 .p-about__linksImageList--small {
-  margin-top: 40px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
 
   .p-about__linksImageItems {
     width: calc((100% - 17px) / 2);
@@ -373,11 +363,13 @@
       width: calc((100% - 48px * 2) / 3);
     }
     img {
-      width: 162px;
+      display: block;
       height: 108px;
+      margin: 0 auto;
+      width: 162px;
       @include m.mq(pc) {
-        width: 100%;
         height: fit-content;
+        width: 100%;
       }
     }
 
@@ -391,7 +383,6 @@
 
   .p-about__linksImageItemsText {
     margin-top: 16px;
-    font-size: 11px;
     font-size: 1.1rem;
   }
 }

@@ -1459,10 +1459,10 @@ html {
 }
 
 .p-about__heroTextAreaCont {
+  background-color: #F2F7F6;
+  letter-spacing: 0.1em;
   margin-top: -130px;
   padding: 24px;
-  letter-spacing: 0.1em;
-  background-color: #F2F7F6;
 }
 @media screen and (min-width: 1025px) {
   .p-about__heroTextAreaCont {
@@ -1471,16 +1471,14 @@ html {
 }
 
 .p-about__heroTextAreaTitle {
-  padding-top: 14px;
-  font-size: 16px;
+  border-top: 2px solid #1A1311;
   font-size: 1.6rem;
   font-weight: 600;
   text-align: center;
-  border-top: 2px solid #1A1311;
+  padding-top: 14px;
 }
 @media screen and (min-width: 1025px) {
   .p-about__heroTextAreaTitle {
-    font-size: 28px;
     font-size: 2.8rem;
   }
 }
@@ -1490,24 +1488,22 @@ html {
 }
 
 .p-about__heroTextAreaText {
-  padding-top: 16px;
-  font-size: 14px;
   font-size: 1.4rem;
+  padding-top: 16px;
 }
 @media screen and (min-width: 1025px) {
   .p-about__heroTextAreaText {
-    font-size: 16px;
     font-size: 1.6rem;
   }
 }
 
 .p-about__heroTextAreaIcon {
-  padding: 16px 0;
   text-align: center;
+  padding: 16px 0;
 }
 .p-about__heroTextAreaIcon img {
-  width: 71px;
   height: 81px;
+  width: 71px;
 }
 
 .p-about__imageList {
@@ -1520,24 +1516,24 @@ html {
 }
 @media screen and (min-width: 1025px) {
   .p-about__imageList .p-about__imageItem {
-    position: absolute;
     display: inline-block;
+    position: absolute;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-about__imageList .p-about__imageItem:first-child {
-    top: 0;
     left: 0;
+    top: 0;
   }
 }
 .p-about__imageList .p-about__imageItem:first-child img {
-  width: 242px;
   height: 161px;
+  width: 242px;
 }
 @media screen and (min-width: 1025px) {
   .p-about__imageList .p-about__imageItem:first-child img {
-    width: 379px;
     height: auto;
+    width: 379px;
   }
 }
 .p-about__imageList .p-about__imageItem:nth-child(2) {
@@ -1546,9 +1542,9 @@ html {
 }
 @media screen and (min-width: 1025px) {
   .p-about__imageList .p-about__imageItem:nth-child(2) {
-    top: 394px;
-    right: 421px;
     margin-top: 0;
+    right: 421px;
+    top: 394px;
   }
 }
 .p-about__imageList .p-about__imageItem:nth-child(2) img {
@@ -1567,19 +1563,19 @@ html {
 }
 @media screen and (min-width: 1025px) {
   .p-about__imageList .p-about__imageItem:nth-child(3) {
-    top: 125px;
-    right: 0;
     margin-top: 0;
+    right: 0;
+    top: 125px;
   }
 }
 .p-about__imageList .p-about__imageItem:nth-child(3) img {
-  width: 328px;
   height: 218px;
+  width: 328px;
 }
 @media screen and (min-width: 1025px) {
   .p-about__imageList .p-about__imageItem:nth-child(3) img {
-    width: 515px;
     height: auto;
+    width: 515px;
   }
 }
 
@@ -1594,9 +1590,9 @@ html {
 }
 
 .p-about__guideItem {
+  background-color: #F1EDDE;
   margin-top: 48px;
   padding: 24px 24px 56px;
-  background-color: #F1EDDE;
 }
 @media screen and (min-width: 1025px) {
   .p-about__guideItem {
@@ -1608,8 +1604,8 @@ html {
 
 @media screen and (min-width: 1025px) {
   .p-about__guideItemImage {
-    width: 480px;
     height: auto;
+    width: 480px;
   }
 }
 
@@ -1620,19 +1616,17 @@ html {
 }
 
 .p-about__guideItemTitle {
-  margin-top: 16px;
-  padding: 16px 0;
-  font-size: 20px;
-  font-size: 2rem;
   border-top: 1px solid #1A1311;
   border-bottom: 1px solid #1A1311;
+  font-size: 2rem;
+  margin-top: 16px;
+  padding: 16px 0;
   text-align: center;
 }
 
 .p-about__guideItemSubtitle {
-  margin-top: 24px;
-  font-size: 14px;
   font-size: 1.4rem;
+  margin-top: 24px;
 }
 @media screen and (min-width: 1025px) {
   .p-about__guideItemSubtitle {
@@ -1642,9 +1636,9 @@ html {
 
 /* アクセス */
 .p-about__access {
+  background-color: #F8F8F8;
   margin-top: 80px;
   padding: 48px 16px;
-  background-color: #F8F8F8;
 }
 
 .p-about__accessList {
@@ -1679,26 +1673,24 @@ html {
   }
 }
 .p-about__accessItem dl {
-  padding-top: 16px;
   border-top: 1px solid #1A1311;
+  padding-top: 16px;
 }
 .p-about__accessItem dl div {
-  display: flex;
   align-items: center;
-  padding: 16px 0px;
-  font-size: 14px;
-  font-size: 1.4rem;
   border-bottom: 1px solid #E2E2E2;
+  display: flex;
+  font-size: 1.4rem;
+  padding: 16px 0px;
 }
 .p-about__accessItem dl div:first-child {
   padding-top: 0;
 }
 .p-about__accessItem dl dt {
-  width: 25%;
   font-weight: 600;
+  width: 25%;
 }
 .p-about__accessItem dl dt span {
-  font-size: 11px;
   font-size: 1.1rem;
   font-weight: normal;
 }
@@ -1707,10 +1699,9 @@ html {
 }
 
 .p-about__accessItemTitle {
-  padding-bottom: 16px;
-  font-size: 20px;
   font-size: 2rem;
   font-weight: 600;
+  padding-bottom: 16px;
 }
 
 .p-about__accessItemImage {
@@ -1724,13 +1715,13 @@ html {
   }
 }
 .p-about__accessItemImage img {
-  width: 279px;
   height: 272px;
+  width: 279px;
 }
 @media screen and (min-width: 1025px) {
   .p-about__accessItemImage img {
-    width: 416px;
     height: fit-content;
+    width: 416px;
   }
 }
 
@@ -1745,13 +1736,13 @@ html {
   }
 }
 .p-about__accessItemImage--second img {
-  width: 343px;
   height: 243px;
+  width: 343px;
 }
 @media screen and (min-width: 1025px) {
   .p-about__accessItemImage--second img {
-    width: 416px;
     height: fit-content;
+    width: 416px;
   }
 }
 
@@ -1767,23 +1758,21 @@ html {
 }
 
 .p-about__linksIcon {
-  display: flex;
   align-items: center;
-  width: 16px;
+  display: flex;
   height: 18px;
   margin: 0 auto;
+  width: 16px;
 }
 
 .p-about__linksTitle {
-  margin-top: 9px;
-  font-size: 16px;
   font-size: 1.6rem;
   font-weight: 600;
+  margin-top: 9px;
   text-align: center;
 }
 @media screen and (min-width: 1025px) {
   .p-about__linksTitle {
-    font-size: 20px;
     font-size: 2rem;
   }
 }
@@ -1803,13 +1792,15 @@ html {
   }
 }
 .p-about__linksImageList--big .p-about__linksImageItems img {
-  width: 343px;
+  display: block;
   height: 227px;
+  margin: 0 auto;
+  width: 343px;
 }
 @media screen and (min-width: 1025px) {
   .p-about__linksImageList--big .p-about__linksImageItems img {
-    width: 100%;
     height: fit-content;
+    width: 100%;
   }
 }
 .p-about__linksImageList--big .p-about__linksImageItems:not(:first-child) {
@@ -1821,17 +1812,16 @@ html {
   }
 }
 .p-about__linksImageList--big .p-about__linksImageItemsText {
-  margin-top: 16px;
-  font-size: 14px;
   font-size: 1.4rem;
   line-height: 2em;
+  margin-top: 16px;
 }
 
 .p-about__linksImageList--small {
-  margin-top: 40px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 .p-about__linksImageList--small .p-about__linksImageItems {
   width: calc((100% - 17px) / 2);
@@ -1842,13 +1832,15 @@ html {
   }
 }
 .p-about__linksImageList--small .p-about__linksImageItems img {
-  width: 162px;
+  display: block;
   height: 108px;
+  margin: 0 auto;
+  width: 162px;
 }
 @media screen and (min-width: 1025px) {
   .p-about__linksImageList--small .p-about__linksImageItems img {
-    width: 100%;
     height: fit-content;
+    width: 100%;
   }
 }
 .p-about__linksImageList--small .p-about__linksImageItems:nth-child(n+3) {
@@ -1861,6 +1853,5 @@ html {
 }
 .p-about__linksImageList--small .p-about__linksImageItemsText {
   margin-top: 16px;
-  font-size: 11px;
   font-size: 1.1rem;
 }/*# sourceMappingURL=style.css.map */
