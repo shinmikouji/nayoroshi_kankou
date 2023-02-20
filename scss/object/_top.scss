@@ -3,11 +3,11 @@
 
 /* メインビジュアル */
 .p-hero {
-  background-image: url('../image/top/main-sp.png');
+  background-image: url('../image/top/main-sp.jpg');
   background-size: cover;
   position: relative;
   @include m.mq(pc) {
-    background-image: url('../image/top/main.png');
+    background-image: url('../image/top/main.jpg');
   }
   &:before {
     content: '';

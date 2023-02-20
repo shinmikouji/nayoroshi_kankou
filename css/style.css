@@ -551,13 +551,13 @@ html {
 
 /* メインビジュアル */
 .p-hero {
-  background-image: url("../image/top/main-sp.png");
+  background-image: url("../image/top/main-sp.jpg");
   background-size: cover;
   position: relative;
 }
 @media screen and (min-width: 1025px) {
   .p-hero {
-    background-image: url("../image/top/main.png");
+    background-image: url("../image/top/main.jpg");
   }
 }
 .p-hero:before {
