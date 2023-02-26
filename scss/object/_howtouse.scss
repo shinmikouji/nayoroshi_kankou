@@ -39,7 +39,6 @@
   flex-direction: column;
   gap: 4px;
   padding-right: 16px;
-  position: relative;
   width: calc((100% - 16px * 2) / 3 );
 
   &:nth-child(3) {
@@ -115,10 +114,6 @@
   flex-direction: column;
   gap: 24px;
   margin-top: 24px;
-}
-
-.p-use__gideCancelStepItems {
-
 }
 
 .p-use__gideCancelStepItemsNum {
@@ -206,17 +201,28 @@
     height: 100%;
     background: inherit;
     border-radius: inherit;
+    transition: all 0.4s ease-out;
     transform: rotate(90deg);
+  }
+
+  &.active {
+    &:before {
+      transform: rotate(0deg);
+    }
   }
 }
 
 .p-use__qaAccordionItemInner {
   background: g.$color-white;
-  border-top: 2px solid g.$color-06;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 24px;
-  padding: 16px;
+
+  &.active {
+    border-top: 2px solid g.$color-06;
+    display: flex;
+    padding: 16px;
+  }
 }
 
 .p-use__qaAccordionItemInnerItem {

@@ -2,10 +2,10 @@
 @use "../foundation/mixin" as m;
 
 .l-headerUnder {
+  background-color: g.$color-06;
+  height: 62px;
   position: relative;
   width: 100%;
-  height: 62px;
-  background-color: g.$color-06;
   @include m.mq(pc) {
     height: 80px;
     padding: 13px 16px;
@@ -15,32 +15,32 @@
       display: flex;
     }
     .l-header__logo {
-      display: flex;
-      justify-content: center;
       align-items: center;
-      width: 62px;
+      display: flex;
       height: 62px;
+      justify-content: center;
+      width: 62px;
       img {
-        width: 32px;
         height: 37px;
+        width: 32px;
       }
     }
     .l-header__icon {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      width: 62px;
-      height: 62px;
-      right: 0;
       cursor: pointer;
+      display: flex;
+      height: 62px;
+      justify-content: center;
+      position: absolute;
+      right: 0;
+      width: 62px;
       z-index: 3;
 
       .bar {
-        position: absolute;
-        width: 30px;
-        height: 1px;
         background-color: g.$color-07;
+        height: 1px;
+        position: absolute;
         transition: all 0.5s;
+        width: 30px;
       }
 
       .top {
@@ -53,7 +53,7 @@
         top: 66%;
       }
     }
-  
+
     .animation1 .top {
       top: 48%;
     }
@@ -72,17 +72,18 @@
 
     .l-header__menus {
       background-color: g.$color-06;
-      width: 100%;
       height: 100vh;
       position: fixed;
       top: 0;
       transition: left 0.5s;
+      width: 100%;
+      z-index: 2;
       @include m.mq(sp) {
         left: 100%;
       }
       @include m.mq(pc) {
-        width: 600px;
         right: -600px;
+        width: 600px;
       }
     }
 
@@ -97,16 +98,16 @@
     }
 
     .l-header__menuList {
+      left: 14%;
       position: absolute;
       top: 30%;
-      left: 14%;
 
       li {
+        border-bottom: 1px solid g.$border-color-01;
         font-size: 28px;
         font-size: 2.8rem;
-        padding-bottom: 9px;
         letter-spacing: 0.1em;
-        border-bottom: 1px solid g.$border-color-01;
+        padding-bottom: 9px;
         &:not(:first-child) {
           padding-top: 19px;
         }
@@ -115,13 +116,13 @@
   }
   .c-display--pc {
     .l-header__contents {
-      display: flex;
       align-items: center;
+      display: flex;
     }
     .l-header__logo {
       img {
-        width: 44px;
         height: 50px;
+        width: 44px;
       }
     }
     .l-header__nav {

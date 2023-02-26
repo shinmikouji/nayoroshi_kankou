@@ -17,4 +17,9 @@ jQuery(function ($) {
       }, 500);
     }
   });
+
+  $(".p-use__qaAccordionItem .p-use__qaAccordionItemHead").click(function() {
+    $(this).next(".p-use__qaAccordionItemInner").toggleClass("active")
+    $(this).children(".p-use__qaAccordionItemHeadIcon").toggleClass("active")
+  })
 });

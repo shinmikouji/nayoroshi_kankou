@@ -3,22 +3,22 @@
 
 .l-headerTop {
   .l-header__icon {
-    position: absolute;
-    width: 62px;
-    height: 62px;
-    top: 0;
-    right: 0;
     background-color: g.$color-06;
-    padding: 19px 16px;
     cursor: pointer;
+    height: 62px;
+    position: absolute;
+    padding: 19px 16px;
+    right: 0;
+    top: 0;
+    width: 62px;
     z-index: 3;
 
     .bar {
-      position: absolute;
-      width: 30px;
-      height: 1px;
       background-color: g.$color-07;
+      height: 1px;
+      position: absolute;
       transition: all 0.5s;
+      width: 30px;
     }
 
     .top {
@@ -52,17 +52,18 @@
   /* 初期状態では左側に隠している状態に設定 */
   .l-header__menus {
     background-color: g.$color-06;
-    width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
     transition: left 0.5s;
+    width: 100%;
+    z-index: 2;
     @include m.mq(sp) {
       left: 100%;
     }
     @include m.mq(pc) {
-      width: 600px;
       right: -600px;
+      width: 600px;
     }
   }
 
@@ -77,16 +78,16 @@
   }
 
   .l-header__menuList {
+    left: 14%;
     position: absolute;
     top: 30%;
-    left: 14%;
 
     li {
+      border-bottom: 1px solid g.$border-color-01;
       font-size: 28px;
       font-size: 2.8rem;
-      padding-bottom: 9px;
       letter-spacing: 0.1em;
-      border-bottom: 1px solid g.$border-color-01;
+      padding-bottom: 9px;
       &:not(:first-child) {
         padding-top: 19px;
       }
