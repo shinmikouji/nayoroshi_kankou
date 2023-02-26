@@ -1,0 +1,360 @@
+@use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
+
+/* メインビジュアル */
+.p-use__hero {
+  background-image: url('../image/howtouse/main-sp.jpg');
+  background-size: cover;
+  @include m.mq(pc) {
+    background-image: url('../image/about/main.jpg');
+  }
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: 56%;
+    @include m.mq(pc) {
+      padding-bottom: 39%;
+    }
+  }
+}
+
+.p-use__gide {
+  padding: 40px 16px 48px;
+}
+
+.p-use__gideList {
+  counter-reset: number;
+  background: g.$color-08;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding: 24px 32px;
+}
+
+.p-use__gideItems {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 16px;
+  position: relative;
+  width: calc((100% - 16px * 2) / 3 );
+
+  &:nth-child(3) {
+    padding-right: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+    width: fit-content;
+  }
+
+  &:nth-child(3) .p-use__gideItemsInner:after,
+  &:last-child .p-use__gideItemsInner:after {
+    content: none;
+  }
+}
+
+.p-use__gideItemsInner {
+  align-items: center;
+  background: g.$color-white;
+  border-radius: 50%;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  position: relative;
+  width: 64px;
+  img {
+    width: 24px;
+    height: 2
+    4px;
+  }
+
+  &:before {
+    counter-increment: number;
+    content: counter(number);
+    color: g.$color-01;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    left: 0;
+    position: absolute;
+    top: 0px;
+  }
+
+  &:after {
+    border-left: 8px solid black;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    right: -24px;
+    position: absolute;
+    width: 0;
+  }
+}
+
+.p-use__gideItemsText {
+  font-size: 1.4rem;
+}
+
+.p-use__gideCancel {
+  margin-top: 40px;
+}
+
+.p-use__gideCancelTitle {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.p-use__gideCancelStepList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.p-use__gideCancelStepItems {
+
+}
+
+.p-use__gideCancelStepItemsNum {
+  align-items: center;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: min-content auto;
+
+  &:after {
+    border: 1px solid g.$color-black;
+    content: '';
+  }
+}
+
+.p-use__gideCancelStepItemsText {
+  font-size: 1.4rem;
+  line-height: 2em;
+  margin-top: 16px;
+}
+
+.p-use__gideCancelStepItemsCaption {
+  color: g.$color-07;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  padding-left: 16px;
+  position: relative;
+
+  &:before {
+    content: '\203B';
+    position: absolute;
+    left: 0;
+  }
+
+  a {
+    color: g.$color-01;
+    text-decoration: underline;
+  }
+}
+
+.p-use__qa {
+  background: g.$color-08;
+  padding: 48px 16px;
+}
+
+.p-use__qaAccordionList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.p-use__qaAccordionItem {
+  border: 1px solid g.$color-06;
+}
+
+.p-use__qaAccordionItemHead {
+  align-items: center;
+  background: g.$color-white;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  width: 100%;
+}
+
+.p-use__qaAccordionItemHeadText {
+  font-size: 1.6rem;
+}
+
+.p-use__qaAccordionItemHeadIcon {
+  background: currentColor;
+  color: g.$color-01;
+  display: inline-block;
+  height: 0.1em;
+  line-height: 1;
+  width: 16px;
+  position: relative;
+  vertical-align: middle;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    transform: rotate(90deg);
+  }
+}
+
+.p-use__qaAccordionItemInner {
+  background: g.$color-white;
+  border-top: 2px solid g.$color-06;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+}
+
+.p-use__qaAccordionItemInnerItem {
+  border-bottom: 1px solid g.$border-color-01;
+  padding: 0 0 24px 24px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.p-use__qaAccordionItemInnerItemTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 2em;
+  position: relative;
+
+  &:before {
+    content: "";
+    background-image: url('../image/howtouse/icon-04.svg');
+    display: inline-block;
+    height: 24px;
+    left: -24px;
+    position: absolute;
+    top: 2px;
+    width: 18px;
+  }
+}
+
+.p-use__qaAccordionItemInnerItemText {
+  font-size: 1.4rem;
+  line-height: 2em;
+  margin-top: 16px;
+  position: relative;
+
+  &:before {
+    content: "";
+    background-image: url('../image/howtouse/icon-05.svg');
+    display: inline-block;
+    height: 24px;
+    left: -24px;
+    position: absolute;
+    top: 2px;
+    width: 18px;
+  }
+}
+
+.p-use__qaAccordionItemInnerItemCaption {
+  color: g.$color-03;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin-top: 8px;
+}
+
+//特定商取引法に基づく表記
+.p-use__law {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 16px;
+}
+
+.p-use__lawTitle {
+  border-bottom: 1px solid g.$color-black;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 28px;
+  padding-bottom: 16px;
+}
+
+.p-use__lawItems {
+  border-bottom: 1px solid g.$border-color-01;
+  display: flex;
+  gap: 40px;
+  padding: 16px 0;
+}
+
+.p-use__lawItemsTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 22%;
+}
+
+.p-use__lawItemsText {
+  font-size: 1.4rem;
+  flex: 1;
+  line-height: 2em;
+
+  a {
+    color: g.$color-01;
+    text-decoration: underline;
+  }
+}
+
+.p-use__lawItemsCaption {
+  color: g.$color-03;
+  display: block;
+  font-size: 1.1rem;
+  line-height: 16px;
+}
+
+//利用規約
+.p-use__terms {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 16px 48px;
+}
+
+.p-use__termsTitle {
+  border-bottom: 1px solid g.$color-black;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 28px;
+  padding-bottom: 16px;
+}
+
+.p-use__termsList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.p-use__termsItemsTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.p-use__termsItemsTextItems {
+  font-size: 1.1rem;
+  line-height: 16px;
+  text-indent: 1em;
+  position: relative;
+
+  &:before {
+    content: "・";
+    display: block;
+    left: -1em;
+    position: absolute;
+  }
+}
