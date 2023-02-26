@@ -144,6 +144,20 @@
           <div class="p-use__qaAccordionItemHeadText">サバイバルゲームについて</div>
           <div class="p-use__qaAccordionItemHeadIcon"></div>
         </div>
+        <ul class="p-use__qaAccordionItemInner">
+          <li class="p-use__qaAccordionItemInnerItem">
+            <h2 class="p-use__qaAccordionItemInnerItemTitle">
+              承諾書の提出とありますがどうしたらよいですか？
+            </h2>
+            <div class="p-use__qaAccordionItemInnerItemText">
+              アクティビティ詳細ページ内で承諾書がダウンロードできます。ご一読いただき署名し、当日ご提出ください。
+            </div>
+            <div class="p-use__qaAccordionItemInnerItemCaption">
+              ※現地でも用紙のご準備をしておりますので当日のご記入も可能です。<br />
+              ※ゲームに参加しない同伴者がいた場合、同伴者も承諾書は必要です。
+            </div>
+          </li>
+        </ul>
       </li>
     </ul>
   </section>

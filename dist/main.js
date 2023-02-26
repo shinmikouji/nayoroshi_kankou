@@ -1,0 +1,1 @@
+jQuery((function(a){var n=a(".l-header__icon"),i=a(".l-header__menus");n.on("click",(function(){n.hasClass("animation1")?(n.removeClass("animation2"),setTimeout((function(){n.removeClass("animation1"),i.removeClass("animation2")}),500)):(n.addClass("animation1"),setTimeout((function(){n.addClass("animation2"),i.addClass("animation2")}),500))}))}));
