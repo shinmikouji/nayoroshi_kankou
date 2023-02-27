@@ -33,7 +33,7 @@
     <div class="c-display--sp">
       <div class="l-header__contents">
         <div class="l-header__logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/logo1.svg" alt="名寄市観光に関してのアイコン">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/header-logo.svg" alt="名寄市観光に関してのアイコン">
         </div>
         <div class="l-header__icon" id="open">
           <span class="top bar"></span>
@@ -54,7 +54,7 @@
     <div class="c-display--pc">
       <div class="l-header__contents">
         <div class="l-header__logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/logo1.svg" alt="名寄市観光に関してのアイコン">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/header-logo.svg" alt="名寄市観光に関してのアイコン">
         </div>
         <nav class="l-header__nav">
           <ul class="l-header__navList">

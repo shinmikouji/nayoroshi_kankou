@@ -8,7 +8,7 @@
           <div class="p-about__heroTextAreaTop">
             <h2 class="p-about__heroTextAreaTitle">N GATEWAY について</h2>
             <div class="p-about__heroTextAreaIcon">
-              <img src="<?php echo get_template_directory_uri(); ?>/image/logo1.svg" alt="名寄についてに関してのアイコン">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/symbol.svg" alt="名寄についてに関してのアイコン">
             </div>
           </div>
           <p class="p-about__heroTextAreaText">

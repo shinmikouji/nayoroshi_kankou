@@ -1,0 +1,13 @@
+<svg id="Icon_awesome-search" data-name="Icon awesome-search" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="長方形_1202" data-name="長方形 1202" width="32" height="32" fill="none"/>
+  <g id="楕円形_12" data-name="楕円形 12" fill="none" stroke="#50a594" stroke-width="1">
+    <circle cx="16" cy="16" r="16" stroke="none"/>
+    <circle cx="16" cy="16" r="15.5" fill="none"/>
+  </g>
+  <g id="グループ_1637" data-name="グループ 1637" transform="translate(11 9)">
+    <line id="線_23" data-name="線 23" y1="8" transform="translate(5 6)" fill="none" stroke="#50a594" stroke-linecap="round" stroke-width="2"/>
+    <line id="線_24" data-name="線 24" x2="8" transform="translate(1.032 9.091)" fill="none" stroke="#50a594" stroke-linecap="round" stroke-width="2"/>
+    <line id="線_25" data-name="線 25" x2="8" transform="translate(1.032 5.145)" fill="none" stroke="#50a594" stroke-linecap="round" stroke-width="2"/>
+    <path id="パス_791" data-name="パス 791" d="M.285.411l4,4,4-4" transform="translate(0.715 0.589)" fill="none" stroke="#4fa392" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>
