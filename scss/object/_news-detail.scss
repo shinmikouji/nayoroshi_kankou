@@ -1,0 +1,56 @@
+@use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
+
+.p-news-detail {
+  padding: 24px 16px 48px;
+  @include m.mq(pc) {
+    padding: 80px 0 250px;
+  }
+}
+
+.p-news-detail__date {
+  color: g.$color-03;
+  font-size: 1.4rem;
+  line-height: 2em;
+}
+
+.p-news-detail__title {
+  color: g.$color-01;
+  border-bottom: 1px solid g.$border-color-01;
+  font-size: 2.8rem;
+  line-height: 1;
+  margin-top: 8px;
+  padding-bottom: 24px;
+}
+
+.p-news-detail__text {
+  font-size: 1.4rem;
+  line-height: 2em;
+  margin-top: 48px;
+}
+
+.p-news-detail__btn--back {
+  padding: 48px 0 0;
+  a {
+    @include m.button(g.$color-01, g.$color-09, 35px, 2px, 50%, 0px, 49%, 0px, g.$color-06);
+    @include m.mq(pc) {
+      width: 343px;
+      margin: 0 auto;
+    }
+    &:before {
+      right: 287px;
+      @include m.mq(pc) {
+        right: 0;
+        left: 19px;
+      }
+    }
+    &:after {
+      right: 321px;
+      @include m.mq(pc) {
+        top: 48%;
+        right: 0;
+        left: 16px;
+      }
+    }
+  }
+}
