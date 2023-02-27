@@ -7,7 +7,6 @@
   <!-- <link rel="stylesheet" href="/css/style.css"> -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="/dist/main.js"></script>
   <title>名寄市</title>
   <?php wp_head(); ?>
 </head>

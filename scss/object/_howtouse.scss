@@ -6,14 +6,14 @@
   background-image: url('../image/howtouse/main-sp.jpg');
   background-size: cover;
   @include m.mq(pc) {
-    background-image: url('../image/about/main.jpg');
+    background-image: url('../image/howtouse/main.jpg');
   }
   &:before {
     content: '';
     display: block;
     padding-bottom: 56%;
     @include m.mq(pc) {
-      padding-bottom: 39%;
+      padding-bottom: 28%;
     }
   }
 }
