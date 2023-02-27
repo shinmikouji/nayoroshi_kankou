@@ -48,18 +48,22 @@ $breakpoint: (
 }
 
 @mixin title($color) {
-  font-size: 28px;
+  color: $color;
   font-size: 2.8rem;
   font-style: "Futura";
-  color: $color;
-  text-align: center;
   letter-spacing: 0.2em;
+  text-align: center;
+  @include mq(pc) {
+    font-size: 4.3rem;
+  }
 }
 
 @mixin subTitle($color) {
-  margin-top: 4px;
-  font-size: 14px;
-  font-size: 1.4rem;
-  text-align: center;
   color: $color;
+  font-size: 1.4rem;
+  margin-top: 4px;
+  text-align: center;
+  @include mq(pc) {
+    font-size: 2.1rem;
+  }
 }

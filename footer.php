@@ -1,7 +1,7 @@
 <footer class="l-footer">
     <div class="c-contentWidth">
       <div class="l-footer__logo">
-        <img src="<?php echo get_template_directory_uri(); ?>/image/logo1.svg" alt="名寄市観光に関してのアイコン">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/footer-logo.svg" alt="名寄市観光に関してのアイコン">
       </div>
       <p class="l-footer__title">NPO法人 なよろ観光まちづくり協会</p>
       <p class="l-footer__address">〒096-0001 北海道名寄市東1条南7丁目1番地10駅前交流プラザよろーな1F</p>
