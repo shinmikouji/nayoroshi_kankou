@@ -7,7 +7,7 @@
     <section class="p-topAbout c-contentWidth">
       <div class="p-topAbout__inner">
         <div class="p-topAbout__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/top/top-01.png" alt="名寄についてに関しての画像">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/top/top-03.jpg" alt="名寄についてに関しての画像">
         </div>
         <div class="p-topAbout__contents">
           <h2 class="p-topAbout__title">名寄について</h2>
