@@ -114,7 +114,11 @@
 .c-contentWidth {
   max-width: 960px;
   margin: 0 auto;
-  width: 960px;
+}
+@media screen and (min-width: 1025px) {
+  .c-contentWidth {
+    width: 960px;
+  }
 }
 
 .c-titleArea__icon {
