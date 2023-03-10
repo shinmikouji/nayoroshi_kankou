@@ -569,28 +569,23 @@ html {
   color: #6A6A6A;
 }
 
-.l-footer__bottom {
-  width: 80%;
+.l-footer__privacyPolicy {
+  border-top: 1px solid #E2E2E2;
+  cursor: pointer;
+  color: #6A6A6A;
+  display: block;
   margin: 0 auto;
   padding: 8px 0;
-  color: #6A6A6A;
-  border-top: 1px solid #E2E2E2;
+  width: 80%;
 }
 @media screen and (min-width: 1025px) {
-  .l-footer__bottom {
+  .l-footer__privacyPolicy {
     width: 100%;
   }
 }
 
 .l-footer__copy {
-  margin-top: 8px;
   color: #C1C1C1;
-}
-
-@media screen and (min-width: 1025px) {
-  .l-main {
-    padding-bottom: 80px;
-  }
 }
 
 /* メインビジュアル */
@@ -737,7 +732,7 @@ html {
 @media screen and (min-width: 1025px) {
   .p-topAbout__btn {
     margin: 48px auto 0;
-    width: 60%;
+    width: 30%;
   }
 }
 
@@ -893,6 +888,47 @@ html {
   .p-topActivity__itemsText {
     font-size: 1.2rem;
     line-height: 1.8em;
+  }
+}
+
+.p-topActivity__btn {
+  margin-top: 48px;
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  text-align: center;
+  color: #50A594;
+  background-color: #F8F8F8;
+  border: 1px solid #F2F2F2;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+.p-topActivity__btn:before {
+  width: 35px;
+  height: 2px;
+  top: 50%;
+  right: 17px;
+  position: absolute;
+  display: block;
+  content: "";
+  background-color: #50A594;
+}
+.p-topActivity__btn:after {
+  width: 4px;
+  height: 4px;
+  top: 48%;
+  right: 16px;
+  position: absolute;
+  display: block;
+  content: "";
+  background-color: #50A594;
+  border-radius: 50%;
+}
+@media screen and (min-width: 1025px) {
+  .p-topActivity__btn {
+    margin: 48px auto 0;
+    width: 30%;
   }
 }
 

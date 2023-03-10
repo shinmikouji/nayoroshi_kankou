@@ -101,7 +101,7 @@
   @include m.button(g.$color-01, g.$color-09, 35px, 2px, 50%, 17px, 48%, 17px, g.$color-06);
   @include m.mq(pc) {
     margin: 48px auto 0;
-    width: 60%;
+    width: 30%;
   }
 }
 
@@ -243,6 +243,15 @@
   @include m.mq(pc) {
     font-size: 1.2rem;
     line-height: 1.8em;
+  }
+}
+
+.p-topActivity__btn {
+  margin-top: 48px;
+  @include m.button(g.$color-01, g.$color-09, 35px, 2px, 50%, 17px, 48%, 16px, g.$color-06);
+  @include m.mq(pc) {
+    margin: 48px auto 0;
+    width: 30%;
   }
 }
 
