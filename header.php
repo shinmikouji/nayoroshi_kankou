@@ -4,9 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="/css/style.css"> -->
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <title>名寄市</title>
   <?php wp_head(); ?>
 </head>
@@ -32,9 +29,9 @@
   <header class="l-headerUnder">
     <div class="c-display--sp">
       <div class="l-header__contents">
-        <div class="l-header__logo">
+        <a class="l-header__logo" href="<?php echo esc_url(home_url('/')); ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/image/header-logo.svg" alt="名寄市観光に関してのアイコン">
-        </div>
+        </a>
         <div class="l-header__icon" id="open">
           <span class="top bar"></span>
           <span class="middle bar"></span>
@@ -53,9 +50,9 @@
     </div>
     <div class="c-display--pc">
       <div class="l-header__contents">
-        <div class="l-header__logo">
+        <a class="l-header__logo" href="<?php echo esc_url(home_url('/')); ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/image/header-logo.svg" alt="名寄市観光に関してのアイコン">
-        </div>
+        </a>
         <nav class="l-header__nav">
           <ul class="l-header__navList">
             <li><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></li>

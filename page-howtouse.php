@@ -39,7 +39,7 @@
           <div class="p-use__gideItemsInner">
             <img src="<?php echo get_template_directory_uri(); ?>/image/howtouse/guide-05.svg" alt="" class="p-use__gideItemsInnerImg">
           </div>
-          <p class="p-use__gideItemsText">アクティビティを体験！</p>
+          <p class="p-use__gideItemsText">体験！</p>
         </li>
       </ul>
       <div class="p-use__gideCancel">
@@ -51,12 +51,12 @@
             <div class="p-use__gideCancelStepItemsCaption">お問い合わせページは<a href="">こちら</a></div>
           </li>
           <li class="p-use__gideCancelStepItems">
-            <span class="p-use__gideCancelStepItemsNum">STEP1</span>
-            <p class="p-use__gideCancelStepItemsText">●●よりキャンセル受理のメールが届きます</p>
+            <span class="p-use__gideCancelStepItemsNum">STEP2</span>
+            <p class="p-use__gideCancelStepItemsText">本サイトよりキャンセル受理のメールが届きます</p>
           </li>
           <li class="p-use__gideCancelStepItems">
-            <span class="p-use__gideCancelStepItemsNum">STEP1</span>
-            <p class="p-use__gideCancelStepItemsText">決済後の場合、●●よりご返金処理が行われます。</p>
+            <span class="p-use__gideCancelStepItemsNum">STEP3</span>
+            <p class="p-use__gideCancelStepItemsText">決済後の場合、本サイトよりご返金処理が行われます。</p>
             <div class="p-use__gideCancelStepItemsCaption">前日キャンセルは50％のキャンセル料、当日キャンセルには100％のキャンセル料がかかります。予めご了承ください。</div>
           </li>
         </ul>
@@ -213,7 +213,7 @@
       </div>
     </div>
   </section>
-  <section class="p-use__terms">
+  <section class="p-use__terms" id="terms">
     <div class="c-contentWidth">
       <h2 class="p-use__termsTitle">利用規約</h2>
       <ul class="p-use__termsList">

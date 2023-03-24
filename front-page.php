@@ -12,14 +12,17 @@
       <div class="p-topAbout__contents">
         <h2 class="p-topAbout__title">名寄について</h2>
         <div class="p-topAbout__icon">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/top/icon-01.svg" alt="名寄についてに関してのアイコン">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/top/icon-06.svg" alt="名寄についてに関してのアイコン">
         </div>
         <p class="p-topAbout__text">
-          全国のレジャー・遊び・体験を集めた日本最大級のレジャー予約サイト「アソビュー！」では、あなたのお好みの条件でとっておきの体験を見つけることができます。テレビやCMで話題のフライボードや大空を飛べるパラグライダー、土と触れ合う陶芸体験など、様々な遊び・体験を味わうことができます。旅行先でおもしろい体験がしたい人や週末のいつもと違った遊びをしたい人におすすめです。
+          北緯44度、東経142度に位置する市は、アイヌ語 「ナイ・オロ・プト」を語源にした地名
+          です。 「川の合流するところ」という意味で、その名前が示すとおり国内第4位の長さを
+          誇る一級河川「川」とその支流「名寄川」が合流する地点であったことに由来します。昭
+          和29年村と、平成18年町との合併を経て現在に至ります。Ï
         </p>
-      </div>
+      </div>Ï
     </div>
-    <a href="" class="p-topAbout__btn">もっとみる</a>
+    <a href="<?php echo esc_url(home_url('about')); ?>" class="p-topAbout__btn">もっとみる</a>
   </section>
   <section class="p-topEnjoy c-contentWidth">
     <div class="p-topEnjoy__img">
@@ -31,7 +34,11 @@
         <img src="<?php echo get_template_directory_uri(); ?>/image/top/icon-02.svg" alt="名寄についてに関してのアイコン">
       </div>
       <p class="p-topEnjoy__text">
-        全国のレジャー・遊び・体験を集めた日本最大級のレジャー予約サイト「アソビュー！」では、あなたのお好みの条件でとっておきの体験を見つけることができます。テレビやCMで話題のフライボードや大空を飛べるパラグライダー、土と触れ合う陶芸体験など、様々な遊び・体験を味わうことができます。旅行先でおもしろい体験がしたい人や週末のいつもと違った遊びをしたい人におすすめです。
+        一年通しての寒暖差が60度以上ある名寄市。道北ならではの自然に囲まれ、私たちはずっ
+        と昔からその恩恵を受けてきました。パウダースノーを超えた絹のようなきめ細かい雪「
+        シルキースノー」や北海道遺産認定の「天塩川」など…。この雄大な景色を見ると、その
+        歴史に触れ、喧噪を忘れるような時間を過ごすことができます。ぜひ、名寄でしか体験で
+        きないアクティビティを楽しんでみませんか。
       </p>
     </div>
   </section>
@@ -54,7 +61,7 @@
         <?php if ($activity_query->have_posts()) : ?>
           <?php while ($activity_query->have_posts()) : ?>
             <?php $activity_query->the_post(); ?>
-            <li class="p-topActivity__items">
+            <a class="p-topActivity__items" href="<?php the_permalink(); ?>">
               <img src="<?php echo get_template_directory_uri(); ?>/image/top/top-01.png" alt="" class="p-topActivity__itemsImage">
               <h3 class="p-topActivity__itemsTitle"><?php the_title(); ?></h3>
               <p class="p-topActivity__itemsText"><?php echo post_custom('本文'); ?></p>
@@ -66,11 +73,11 @@
                 <dt>場所</dt>
                 <dd><?php echo post_custom('場所'); ?></dd>
               </dl>
-            </li>
+            </a>
           <?php endwhile; ?>
         <?php endif; ?>
       </ul>
-      <a href="" class="p-topActivity__btn">もっとみる</a>
+      <a href="<?php echo esc_url(home_url('activity')); ?>" class="p-topActivity__btn">もっとみる</a>
     </div>
   </section>
   <section class="p-topInsta c-contentWidth">
@@ -124,7 +131,7 @@
           </div>
         </li>
       </ul>
-      <a href="" class="p-topNews__btn">もっとみる</a>
+      <a href="<?php echo esc_url(home_url('news')); ?>" class="p-topNews__btn">もっとみる</a>
     </div>
   </section>
 </main>
