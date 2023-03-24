@@ -102,34 +102,26 @@
       <h1 class="c-titleArea__title--blue">NEWS</h1>
       <p class="c-titleArea__subTitle--blue">お知らせ</p>
       <ul class="p-topNews__list">
-        <li class="p-topNews__items">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/top/top-02.png" alt="" class="p-topNews__itemsImage">
-          <div class="p-topNews__itemsTextArea">
-            <h2 class="p-topNews__itemsTitle">サバイバルゲーム定例開催のお知らせ</h2>
-            <p class="p-topNews__itemsDate">2022.10.30</p>
-          </div>
-        </li>
-        <li class="p-topNews__items">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/top/top-02.png" alt="" class="p-topNews__itemsImage">
-          <div class="p-topNews__itemsTextArea">
-            <h2 class="p-topNews__itemsTitle">サバイバルゲーム定例開催のお知らせ</h2>
-            <p class="p-topNews__itemsDate">2022.10.30</p>
-          </div>
-        </li>
-        <li class="p-topNews__items">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/top/top-02.png" alt="" class="p-topNews__itemsImage">
-          <div class="p-topNews__itemsTextArea">
-            <h2 class="p-topNews__itemsTitle">サバイバルゲーム定例開催のお知らせ</h2>
-            <p class="p-topNews__itemsDate">2022.10.30</p>
-          </div>
-        </li>
-        <li class="p-topNews__items">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/top/top-02.png" alt="" class="p-topNews__itemsImage">
-          <div class="p-topNews__itemsTextArea">
-            <h2 class="p-topNews__itemsTitle">サバイバルゲーム定例開催のお知らせ</h2>
-            <p class="p-topNews__itemsDate">2022.10.30</p>
-          </div>
-        </li>
+        <?php
+          $news_query = new WP_Query(
+            array(
+              'post_type' => 'news',
+              'posts_per_page' => '4'
+            )
+          );
+        ?>
+        <?php if ($news_query->have_posts()) : ?>
+          <?php while ($news_query->have_posts()) : ?>
+            <?php $news_query->the_post(); ?>
+            <a class="p-topNews__items" href="<?php the_permalink(); ?>">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/top/top-02.png" alt="" class="p-topNews__itemsImage">
+              <div class="p-topNews__itemsTextArea">
+                <h2 class="p-topNews__itemsTitle"><?php the_title(); ?></h2>
+                <p class="p-topNews__itemsDate"><?php the_time('Y.m.d'); ?></p>
+              </div>
+            </a>
+          <?php endwhile; ?>
+        <?php endif; ?>
       </ul>
       <a href="<?php echo esc_url(home_url('news')); ?>" class="p-topNews__btn">もっとみる</a>
     </div>
