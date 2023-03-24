@@ -1857,81 +1857,41 @@ html {
   }
 }
 
-.p-about__linksImageList--big {
-  margin-top: 48px;
-}
-@media screen and (min-width: 1025px) {
-  .p-about__linksImageList--big {
-    display: flex;
-    gap: 48px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-about__linksImageList--big .p-about__linksImageItems {
-    width: calc((100% - 48px) / 2);
-  }
-}
-.p-about__linksImageList--big .p-about__linksImageItems img {
-  display: block;
-  height: 227px;
-  margin: 0 auto;
-  width: 343px;
-}
-@media screen and (min-width: 1025px) {
-  .p-about__linksImageList--big .p-about__linksImageItems img {
-    height: fit-content;
-    width: 100%;
-  }
-}
-.p-about__linksImageList--big .p-about__linksImageItems:not(:first-child) {
-  margin-top: 40px;
-}
-@media screen and (min-width: 1025px) {
-  .p-about__linksImageList--big .p-about__linksImageItems:not(:first-child) {
-    margin-top: 0;
-  }
-}
-.p-about__linksImageList--big .p-about__linksImageItemsText {
-  font-size: 1.4rem;
-  line-height: 2em;
-  margin-top: 16px;
-}
-
-.p-about__linksImageList--small {
+.p-about__linksImageList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 40px;
 }
-.p-about__linksImageList--small .p-about__linksImageItems {
+.p-about__linksImageList .p-about__linksImageItems {
   width: calc((100% - 17px) / 2);
 }
 @media screen and (min-width: 1025px) {
-  .p-about__linksImageList--small .p-about__linksImageItems {
+  .p-about__linksImageList .p-about__linksImageItems {
     width: calc((100% - 96px) / 3);
   }
 }
-.p-about__linksImageList--small .p-about__linksImageItems img {
+.p-about__linksImageList .p-about__linksImageItems img {
   display: block;
   height: 108px;
   margin: 0 auto;
   width: 162px;
 }
 @media screen and (min-width: 1025px) {
-  .p-about__linksImageList--small .p-about__linksImageItems img {
+  .p-about__linksImageList .p-about__linksImageItems img {
     height: fit-content;
     width: 100%;
   }
 }
-.p-about__linksImageList--small .p-about__linksImageItems:nth-child(n+3) {
+.p-about__linksImageList .p-about__linksImageItems:nth-child(n+3) {
   margin-top: 40px;
 }
 @media screen and (min-width: 1025px) {
-  .p-about__linksImageList--small .p-about__linksImageItems:nth-child(n+3) {
+  .p-about__linksImageList .p-about__linksImageItems:nth-child(n+3) {
     margin-top: 0;
   }
 }
-.p-about__linksImageList--small .p-about__linksImageItemsText {
+.p-about__linksImageList .p-about__linksImageItemsText {
   margin-top: 16px;
   font-size: 1.1rem;
 }

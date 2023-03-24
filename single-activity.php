@@ -15,7 +15,7 @@
     <section class="p-activity-detail">
       <div class="c-contentWidth">
         <div class="p-activity-detail__icon">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/top/icon-01.svg" alt="名寄についてに関してのアイコン">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/top/icon-06.svg" alt="名寄についてに関してのアイコン">
         </div>
         <h2 class="p-activity-detail__title">
           アクティビティ詳細
@@ -58,15 +58,15 @@
           詳細につきましては、利用方法をご覧ください。
         </div>
         <div class="p-activity-detail__btn">
-          <a href="" class="p-activity-detail__btn--top">利用規約を見る</a>
-          <a href="" class="p-activity-detail__btn--bottom">予約する</a>
+          <a href="<?php echo esc_url(home_url('howtouse')); ?>#terms" class="p-activity-detail__btn--top">利用規約を見る</a>
+          <a href="<?php echo esc_url(home_url('reservation')); ?>" class="p-activity-detail__btn--bottom">予約する</a>
         </div>
       </div>
     </section>
     <section class="p-activity-detail__video">
       <div class="c-contentWidth">
         <div class="p-activity-detail__icon">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/top/icon-01.svg" alt="名寄についてに関してのアイコン">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/top/icon-06.svg" alt="名寄についてに関してのアイコン">
         </div>
         <h2 class="p-activity-detail__title">
           動画
