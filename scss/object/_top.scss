@@ -3,29 +3,86 @@
 
 /* メインビジュアル */
 .p-hero {
-  background-image: url('../image/top/main-sp.jpg');
-  background-size: cover;
   position: relative;
-  @include m.mq(pc) {
-    background-image: url('../image/top/main.jpg');
+}
+
+.p-hero__slider {
+  width: 100%;
+}
+
+.p-hero__item img{
+  width: 100%;
+  height: 100vh;
+}
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
   }
-  &:before {
-    content: '';
-    display: block;
-    padding-bottom: 216%;
-    @include m.mq(pc) {
-      padding-bottom: 56%;
-    }
+  100% {
+    transform: scale(1.15); /* 拡大率 */
   }
 }
 
-.p-hero__title {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  left: 0;
+.add-animation {
+  animation: zoomUp 10s linear 0s normal both;
+}
+
+.p-hero__logo {
+  background-image: url('../image/top/main-logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  height: 185px;
+  left: 50%;
   position: absolute;
-  top: 0;
-  width: 1px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 162px;
+}
+
+.p-dots__logo {
+  background-image: url('../image/top/dots-logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  height: 37px;
+  right: 77px;
+  position: absolute;
+  bottom: 210px;
+  width: 35px;
+  @include m.mq(sp) {
+    bottom: 90px;
+    height: 18px;
+    right: 11px;
+    width: 17px;
+  }
+}
+
+/* Slickのドットのスタイル */
+.slick-dots {
+  bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  right: 80px;
+  width: fit-content;
+  @include m.mq(sp) {
+    bottom: 4px;
+    gap: 0px;
+    right: 5px;
+  }
+  & li button:before {
+    color: g.$color-06;
+    font-size: 13px;
+    opacity: 1;
+    @include m.mq(sp) {
+      font-size: 4px;
+    }
+  }
+  & li.slick-active button:before {
+    color: g.$color-07;
+  }
 }
 
 /* 名寄について */

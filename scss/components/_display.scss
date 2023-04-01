@@ -3,13 +3,13 @@
 
 .c-display--pc {
   @include m.mq(sp) {
-    display: none;
+    display: none !important;
   }
 }
 
 .c-display--sp {
   @include m.mq(pc) {
-    display: none;
+    display: none !important;
   }
 }
 

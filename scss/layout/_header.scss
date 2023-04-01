@@ -1,13 +1,167 @@
 @use "../foundation/variable" as g;
 @use "../foundation/mixin" as m;
 
-.l-header {
+//トップヘッダー
+.l-header--top {
+  @include m.mq(pc) {
+    background-color: g.$color-06;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    padding: 13px 16px;
+    position: fixed;
+    transition: all 0.3s 0s ease;
+    width: 100%;
+    z-index: 3;
+  }
+  .c-display--sp {
+    .l-header__icon {
+      background-color: g.$color-06;
+      cursor: pointer;
+      height: 62px;
+      position: absolute;
+      padding: 19px 16px;
+      right: 0;
+      top: 0;
+      width: 62px;
+      z-index: 3;
+
+      .bar {
+        background-color: g.$color-07;
+        height: 1px;
+        position: absolute;
+        transition: all 0.5s;
+        width: 30px;
+      }
+
+      .top {
+        top: 30%;
+      }
+
+      .middle {
+        top: 48%;
+      }
+
+      .bottom {
+        top: 66%;
+      }
+    }
+
+    /* animation付与時のアイコンのcss */
+    .animation1 .top {
+      top: 48%;
+    }
+
+    .animation1 .bottom {
+      top: 48%;
+    }
+
+    .animation2 .top {
+      transform: rotate(45deg);
+    }
+
+    .animation2 .middle {
+      opacity: 0;
+    }
+
+    .animation2 .bottom {
+      transform: rotate(-45deg);
+    }
+
+    /* 初期状態では左側に隠している状態に設定 */
+    .l-header__menus {
+      background-color: g.$color-06;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      transition: left 0.5s;
+      width: 100%;
+      z-index: 2;
+
+      @include m.mq(sp) {
+        left: 100%;
+      }
+
+      @include m.mq(pc) {
+        right: -600px;
+        width: 600px;
+      }
+    }
+
+    .l-header__menus.animation2 {
+      @include m.mq(sp) {
+        left: 0;
+      }
+
+      @include m.mq(pc) {
+        right: 0;
+      }
+
+      z-index: 2;
+    }
+
+    .l-header__menuList {
+      left: 14%;
+      position: absolute;
+      top: 30%;
+
+      li {
+        border-bottom: 1px solid g.$border-color-01;
+        font-size: 28px;
+        font-size: 2.8rem;
+        letter-spacing: 0.1em;
+        padding-bottom: 9px;
+
+        &:not(:first-child) {
+          padding-top: 19px;
+        }
+      }
+    }
+  }
+
+  .c-display--pc {
+    .l-header__contents {
+      align-items: center;
+      display: flex;
+    }
+
+    .l-header__logo {
+      img {
+        height: 36px;
+        width: 196px;
+      }
+    }
+
+    .l-header__nav {
+      margin-left: 19%;
+    }
+
+    .l-header__navList {
+      display: flex;
+      font-size: 1.8rem;
+
+      li:not(:first-child) {
+        margin-left: 120px;
+      }
+    }
+  }
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+//下層ヘッダー
+.l-header--under {
   align-items: center;
   background-color: g.$color-06;
   display: flex;
   height: 62px;
   position: relative;
   width: 100%;
+
   @include m.mq(pc) {
     align-items: normal;
     flex-direction: column;
@@ -17,10 +171,12 @@
     position: fixed;
     z-index: 3;
   }
+
   .c-display--sp {
     .l-header__contents {
       display: flex;
     }
+
     .l-header__logo {
       align-items: center;
       display: flex;
@@ -28,11 +184,13 @@
       justify-content: center;
       padding-left: 16px;
       width: 120px;
+
       img {
         height: 22px;
         width: 120px;
       }
     }
+
     .l-header__icon {
       cursor: pointer;
       display: flex;
@@ -55,9 +213,11 @@
       .top {
         top: 30%;
       }
+
       .middle {
         top: 48%;
       }
+
       .bottom {
         top: 66%;
       }
@@ -66,15 +226,19 @@
     .animation1 .top {
       top: 48%;
     }
+
     .animation1 .bottom {
       top: 48%;
     }
+
     .animation2 .top {
       transform: rotate(45deg);
     }
+
     .animation2 .middle {
       opacity: 0;
     }
+
     .animation2 .bottom {
       transform: rotate(-45deg);
     }
@@ -87,9 +251,11 @@
       transition: left 0.5s;
       width: 100%;
       z-index: 2;
+
       @include m.mq(sp) {
         left: 100%;
       }
+
       @include m.mq(pc) {
         right: -600px;
         width: 600px;
@@ -100,9 +266,11 @@
       @include m.mq(sp) {
         left: 0;
       }
+
       @include m.mq(pc) {
         right: 0;
       }
+
       z-index: 2;
     }
 
@@ -116,43 +284,38 @@
         font-size: 2.8rem;
         letter-spacing: 0.1em;
         padding-bottom: 9px;
+
         &:not(:first-child) {
           padding-top: 19px;
         }
       }
     }
   }
+
   .c-display--pc {
     .l-header__contents {
       align-items: center;
       display: flex;
     }
+
     .l-header__logo {
       img {
         height: 36px;
         width: 196px;
       }
     }
+
     .l-header__nav {
       margin-left: 19%;
     }
+
     .l-header__navList {
       display: flex;
       font-size: 1.8rem;
+
       li:not(:first-child) {
         margin-left: 120px;
       }
     }
   }
-}
-
-.l-header--top {
-  @include m.mq(pc) {
-    opacity: 0;
-    transition: all 0.3s 0s ease;
-  }
-}
-
-.fadeIn {
-  opacity: 1;
 }
