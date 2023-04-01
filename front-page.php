@@ -2,7 +2,23 @@
 <?php get_header(); ?>
 <main>
   <section class="p-hero">
-    <h1 class="p-hero__title">メイン</h1>
+    <div class="p-hero__slider">
+      <div class="p-hero__item">
+        <img class="c-display--pc" src="<?php echo get_template_directory_uri(); ?>/image/top/slider-01.jpg" alt="">
+        <img class="c-display--sp" src="<?php echo get_template_directory_uri(); ?>/image/top/slider-sp-01.jpg" alt="">
+      </div>
+      <div class="p-hero__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/top/slider-02.jpg" alt="">
+      </div>
+      <div class="p-hero__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/top/slider-03.jpg" alt="">
+      </div>
+      <div class="p-hero__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/top/slider-04.jpg" alt="">
+      </div>
+    </div>
+    <div class="p-hero__logo"></div>
+    <div class="p-dots__logo"></div>
   </section>
   <section class="p-topAbout c-contentWidth">
     <div class="p-topAbout__inner">
@@ -96,12 +112,12 @@
       <p class="c-titleArea__subTitle--blue">お知らせ</p>
       <ul class="p-topNews__list">
         <?php
-          $news_query = new WP_Query(
-            array(
-              'post_type' => 'news',
-              'posts_per_page' => '4'
-            )
-          );
+        $news_query = new WP_Query(
+          array(
+            'post_type' => 'news',
+            'posts_per_page' => '4'
+          )
+        );
         ?>
         <?php if ($news_query->have_posts()) : ?>
           <?php while ($news_query->have_posts()) : ?>
