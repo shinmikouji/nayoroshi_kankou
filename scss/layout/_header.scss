@@ -1,7 +1,7 @@
 @use "../foundation/variable" as g;
 @use "../foundation/mixin" as m;
 
-.l-headerUnder {
+.l-header {
   align-items: center;
   background-color: g.$color-06;
   display: flex;
@@ -14,6 +14,8 @@
     height: 80px;
     justify-content: center;
     padding: 13px 16px;
+    position: fixed;
+    z-index: 3;
   }
   .c-display--sp {
     .l-header__contents {
@@ -142,4 +144,15 @@
       }
     }
   }
+}
+
+.l-header--top {
+  @include m.mq(pc) {
+    opacity: 0;
+    transition: all 0.3s 0s ease;
+  }
+}
+
+.fadeIn {
+  opacity: 1;
 }

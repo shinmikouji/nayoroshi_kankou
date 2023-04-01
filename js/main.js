@@ -22,4 +22,12 @@ jQuery(function ($) {
     $(this).next(".p-use__qaAccordionItemInner").toggleClass("active")
     $(this).children(".p-use__qaAccordionItemHeadIcon").toggleClass("active")
   })
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() >= 80){
+      $('.l-header--top').addClass('fadeIn')
+    } else if($(this).scrollTop() < 80) {
+      $('.l-header--top').removeClass('fadeIn')
+    }
+  })
 });

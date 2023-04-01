@@ -1,6 +1,6 @@
 <?php /* Template Name:about   */ ?>
 <?php get_header(); ?>
-<main>
+<main class="l-main">
   <section class="p-about__hero"></section>
   <section class="p-about__heroTextArea">
     <div class="c-contentWidth">

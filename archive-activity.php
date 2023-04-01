@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <main>
+  <main class="l-main">
     <section class="p-activity__hero"></section>
     <section class="p-activity">
       <div class="c-contentWidth">

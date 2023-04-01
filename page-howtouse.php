@@ -1,10 +1,9 @@
 <?php /* Template Name:howtouse   */ ?>
 <?php get_header(); ?>
-<main>
+<main class="l-main">
   <section class="p-use__hero"></section>
   <section class="p-use__gide">
     <div class="c-contentWidth">
-
       <div class="c-titleArea__icon">
         <img src="<?php echo get_template_directory_uri(); ?>/image/howtouse/icon-01.svg" alt="予約の流れに関してのアイコン">
       </div>

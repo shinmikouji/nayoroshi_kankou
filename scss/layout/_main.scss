@@ -1,0 +1,7 @@
+@use "../foundation/mixin" as m;
+
+.l-main {
+  @include m.mq(pc) {
+    padding-top: 80px;
+  }
+}
