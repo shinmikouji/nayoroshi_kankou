@@ -18,7 +18,6 @@
       </div>
     </div>
     <div class="p-hero__logo"></div>
-    <div class="p-dots__logo"></div>
   </section>
   <section class="p-topAbout c-contentWidth">
     <div class="p-topAbout__inner">
@@ -26,12 +25,12 @@
         <img src="<?php echo get_template_directory_uri(); ?>/image/top/top-03.jpg" alt="名寄についてに関しての画像">
       </div>
       <div class="p-topAbout__contents">
-        <h2 class="p-topAbout__title">名寄について</h2>
+        <h2 class="p-topAbout__title"><ruby>名寄<rt>なよろ</rt></ruby>について</h2>
         <div class="p-topAbout__icon">
           <img src="<?php echo get_template_directory_uri(); ?>/image/top/icon-06.svg" alt="名寄についてに関してのアイコン">
         </div>
         <p class="p-topAbout__text">
-          北緯44度、東経142度に位置する市は、アイヌ語 「ナイ・オロ・プト」を語源にした地名です。「川の合流するところ」という意味で、その名前が示すとおり国内第4位の長さを誇る一級河川「川」とその支流「名寄川」が合流する地点であったことに由来します。昭和29年村と、平成18年町との合併を経て現在に至ります。Ï
+          北緯44度、東経142度に位置する市は、アイヌ語 「ナイ・オロ・プト」を語源にした地名です。「川の合流するところ」という意味で、その名前が示すとおり国内第4位の長さを誇る一級河川「川」とその支流「名寄川」が合流する地点であったことに由来します。昭和29年村と、平成18年町との合併を経て現在に至ります。
         </p>
       </div>
     </div>
@@ -99,7 +98,7 @@
     </a>
     <ul class="p-topInsta__list">
       <li class="p-topInsta__items">
-
+        <?php echo do_shortcode("[instagram-feed feed=1]"); ?>
       </li>
     </ul>
   </section>

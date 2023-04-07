@@ -41,24 +41,6 @@
   width: 162px;
 }
 
-.p-dots__logo {
-  background-image: url('../image/top/dots-logo.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
-  height: 37px;
-  right: 77px;
-  position: absolute;
-  bottom: 210px;
-  width: 35px;
-  @include m.mq(sp) {
-    bottom: 90px;
-    height: 18px;
-    right: 11px;
-    width: 17px;
-  }
-}
-
 /* Slickのドットのスタイル */
 .slick-dots {
   bottom: 64px;
@@ -81,7 +63,12 @@
     }
   }
   & li.slick-active button:before {
+    background-image: url('../image/top/dots-logo.svg');
+    background-size: cover;
     color: g.$color-07;
+    content: "";
+    height: 23px;
+    opacity: 1;
   }
 }
 
@@ -126,6 +113,9 @@
   @include m.mq(pc) {
     font-size: 3.2rem;
     margin-top: 0px;
+  }
+  rt {
+    font-size: 1.2rem;
   }
 }
 
@@ -314,7 +304,7 @@
 
 /* インスタ */
 .p-topInsta {
-  padding: 48px 16px;
+  padding: 48px 16px 0px;
 }
 
 .p-topInsta__icon {
