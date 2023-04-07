@@ -37,15 +37,15 @@
     column-gap: 24px;
     grid-template-columns: repeat(
       auto-fill,
-      minmax(calc((100% - 24px * 3) / 4), 1fr)
+      calc((100% - 24px * 3) / 4)
     );
     row-gap: 64px;
   }
 }
 
 .p-activity__items {
-  display: grid;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
   row-gap: 8px;
   dl {
     align-items: center;
@@ -70,6 +70,9 @@
 
   dd {
     color: g.$color-03;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     @include m.mq(pc) {
       font-size: 1.2rem;
     }
@@ -86,6 +89,9 @@
 .p-activity__itemsTitle {
   font-size: 1.6rem;
   font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   @include m.mq(pc) {
     font-size: 2rem;
   }
@@ -93,7 +99,11 @@
 
 .p-activity__itemsText {
   color: g.$color-03;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   font-size: 1.1rem;
+  overflow: hidden;
   @include m.mq(pc) {
     font-size: 1.2rem;
     line-height: 1.8em;

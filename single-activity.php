@@ -4,8 +4,8 @@
     <section class="p-activity-detail__slider">
       <div class="c-contentWidth">
         <div class="p-activity-detail__sliderTextArea">
-          <h2 class="p-activity-detail__sliderTextAreaTitle">パウダースノーサファリ</h2>
-          <p class="p-activity-detail__sliderTextAreaText">豪雪地帯名寄市ならではの絶景風景と厳冬時期ならではの樹氷を運転手付きスノーモービルツアーで体験！</p>
+          <h2 class="p-activity-detail__sliderTextAreaTitle"><?php the_title(); ?></h2>
+          <p class="p-activity-detail__sliderTextAreaText"><?php echo post_custom('アクティビティ説明'); ?></p>
         </div>
         <div class="p-activity-detail__sliderArea">
 
@@ -23,27 +23,27 @@
         <table class="p-activity-detail__table">
           <tr>
             <th>利用料金</th>
-            <td>100,000円</td>
+            <td><?php echo post_custom('利用料金'); ?></td>
           </tr>
           <tr>
             <th>参加人数</th>
-            <td>4名〜10名</td>
+            <td><?php echo post_custom('参加人数'); ?></td>
           </tr>
           <tr>
             <th>開催期間</th>
-            <td>2022年12月25日～3月5日まで　</td>
+            <td><?php echo post_custom('開催期間'); ?></td>
           </tr>
           <tr>
             <th>対象年齢</th>
-            <td>10歳以上</td>
+            <td><?php echo post_custom('対象年齢'); ?></td>
           </tr>
           <tr>
             <th>所要時間</th>
-            <td>120分程度<br>(準備等含めると180分程度)</td>
+            <td><?php echo post_custom('所要時間'); ?></td>
           </tr>
           <tr>
             <th>集合場所</th>
-            <td>なよろピヤシリスキー場※</td>
+            <td><?php echo post_custom('集合場所'); ?></td>
           </tr>
         </table>
         <div class="p-activity-detail__textArea">

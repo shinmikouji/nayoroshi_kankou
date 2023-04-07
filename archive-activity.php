@@ -12,7 +12,7 @@
                 <img src="<?php echo get_theme_file_uri('image/activity/activity-01.jpg"'); ?>" class="p-activity__itemsImage">
               <?php endif; ?>
               <h3 class="p-activity__itemsTitle"><?php the_title(); ?></h3>
-              <p class="p-activity__itemsText"><?php echo post_custom('本文'); ?></p>
+              <p class="p-activity__itemsText"><?php echo post_custom('アクティビティ説明'); ?></p>
               <dl>
                 <dt>期間</dt>
                 <dd><?php echo post_custom('期間'); ?></dd>
