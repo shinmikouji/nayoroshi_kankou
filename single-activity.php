@@ -59,7 +59,7 @@
         </div>
         <div class="p-activity-detail__btn">
           <a href="<?php echo esc_url(home_url('howtouse')); ?>#terms" class="p-activity-detail__btn--top">利用規約を見る</a>
-          <a href="<?php echo esc_url(home_url('reservation')); ?>" class="p-activity-detail__btn--bottom">予約する</a>
+          <a href="<?php echo esc_url(home_url('contact')); ?>" class="p-activity-detail__btn--bottom">予約する</a>
         </div>
       </div>
     </section>

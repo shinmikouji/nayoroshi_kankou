@@ -1,0 +1,52 @@
+@use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
+
+.p-privacyPolicy {
+  padding: 80px 0;
+  @include m.mq(sp) {
+    padding: 24px 16px 48px;
+  }
+}
+
+.p-privacyPolicyTitle {
+  border-bottom: 1px solid g.$color-black;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding-bottom: 16px;
+}
+
+.p-privacyPolicyText {
+  font-size: 1.4rem;
+  line-height: 2em;
+  margin-top: 24px;
+}
+
+.p-privacyPolicyList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.p-privacyPolicyItems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.p-privacyPolicyItemsTitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.p-privacyPolicyItemsText {
+  font-size: 1.4rem;
+  line-height: 2em;
+  padding-left: 1.6em;
+}
+
+.p-privacyPolicyDate {
+  font-size: 1.2rem;
+  margin-top: 32px;
+}

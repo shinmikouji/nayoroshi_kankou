@@ -1,0 +1,68 @@
+@use "../foundation/variable" as g;
+@use "../foundation/mixin" as m;
+
+.p-contact {
+  padding: 108px 0 80px;
+  @include m.mq(sp) {
+    padding: 24px 16px 48px;
+  }
+}
+
+.p-contact__text {
+  font-size: 1.4rem;
+  line-height: 2em;
+  text-align: center;
+  margin-top: 40px;
+  @include m.mq(sp) {
+    text-align: left;
+  }
+}
+
+.p-contactForm {
+  margin-top: 48px;
+}
+
+.p-contactFormList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.p-contactFormItems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @include m.mq(pc) {
+    &:nth-child(3), &:nth-child(6), &:nth-child(7) {
+      .p-contactFormItemsInput {
+        width: 36%;
+      }
+    }
+  }
+}
+
+.p-contactFormItemsLabel {
+  color: g.$color-black;
+  font-size: 1.4rem;
+  line-height: 2em;
+  span {
+    color: g.$color-red;
+    display: inline-block;
+    margin-left: 6px;
+  }
+}
+
+.p-contactFormItemsInput {
+  background: g.$color-09;
+  border-radius: 7.5px;
+  padding: 20px;
+  width: 100%;
+}
+
+.p-contactFormBtn {
+  background: g.$color-01;
+  color: g.$color-white;
+  margin-top: 48px;
+  padding: 16px 0;
+  width: 100%;
+}
