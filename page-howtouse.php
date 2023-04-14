@@ -219,16 +219,16 @@
         <li class="p-use__termsItems">
           <h3 class="p-use__termsItemsTitle">第１条（規約の適用）</h3>
           <ul class="p-use__termsItemsTextList">
-            <li class="p-use__termsItemsTextItems">本規約はNPO法人なよろ観光まちづくり協会（以下、「当社」）により運営されている「N GATEWAY」（以下、「本サイト」）の主催者を含む利用者の皆様（以下、「利用者」）に対して適用されます。</li>
+            <li class="p-use__termsItemsTextItems">本規約はNPO法人なよろ観光まちづくり協会（以下、「当社」）により運営されている「HAKUの森」（以下、「本サイト」）の主催者を含む利用者の皆様（以下、「利用者」）に対して適用されます。</li>
             <li class="p-use__termsItemsTextItems">利用者は、本規約を承諾の上、当社所定の方法にて本サイトを利用するものとし、本サイトの利用をもって本規約に同意したものとみなします。</li>
           </ul>
         </li>
         <li class="p-use__termsItems">
           <h3 class="p-use__termsItemsTitle">第２条（本サイトの内容）</h3>
           <ul class="p-use__termsItemsTextList">
-            <li class="p-use__termsItemsTextItems">本サイトは、インターネットを通じ、名寄のアクティビティ情報の紹介、観光情報や宿泊情報の提供、及びオンラインで予約可能なシステムの提供を行います。</li>
+            <li class="p-use__termsItemsTextItems">本サイトは、インターネットを通じ、名寄のアクティビティ情報の紹介、及びオンラインで予約可能なシステムの提供を行います。</li>
             <li class="p-use__termsItemsTextItems">利用者は、各種機能を利用し情報検索を行ったり、予約システムを利用することで、当社のサービスを予約することができます。予約契約は、利用者との間で行われるものであり、予約の確定は、当社が利用者へ「予約確定」の返信を行うことで成立します。</li>
-            <li class="p-use__termsItemsTextItems">利用者はWEB上で予約を申請するにあたり、個人情報の入力、PayPalによるクレジット決済が必要になります。</li>
+            <li class="p-use__termsItemsTextItems">利用者はWEB上で予約を申請するにあたり、個人情報の入力が必要になります。</li>
             <li class="p-use__termsItemsTextItems">利用者は予約申込を行うことにより、キャンセルポリシー、キャンセル料等に同意したものとみなされます。</li>
           </ul>
         </li>
@@ -236,8 +236,8 @@
           <h3 class="p-use__termsItemsTitle">第３条（利用予約や支払いについて）</h3>
           <ul class="p-use__termsItemsTextList">
             <li class="p-use__termsItemsTextItems">利用者がアクティビティ申し込み後、当社が受付（時間等の調整）を行い予約成立の通知を行います。</li>
-            <li class="p-use__termsItemsTextItems">当社が通知する請求に基づき、利用料をクレジット決済（PayPalでの登録が必要）にて支払後、予約確定となります。</li>
-            <li class="p-use__termsItemsTextItems">アクティビティの予約締め切りは、7日前までとなります。
+            <li class="p-use__termsItemsTextItems">当社が通知する請求に基づき、利用料を現地にてお支払いいただきます。</li>
+            <li class="p-use__termsItemsTextItems">アクティビティの予約締め切りは、2日前までとなります。
             </li>
           </ul>
         </li>
@@ -303,6 +303,7 @@
           </ul>
         </li>
       </ul>
+      <p class="p-use__termsDate">2023年1月31日制定</p>
     </div>
   </section>
 </main>
