@@ -329,7 +329,7 @@ html {
   background-color: #F2F2F2;
   cursor: pointer;
   height: 62px;
-  position: absolute;
+  position: fixed;
   padding: 19px 16px;
   right: 0;
   top: 0;
@@ -2012,10 +2012,6 @@ html {
     margin-top: 0;
   }
 }
-.p-about__linksImageList .p-about__linksImageItemsText {
-  margin-top: 16px;
-  font-size: 1.1rem;
-}
 
 .p-contact {
   padding: 108px 0 80px;
@@ -2113,8 +2109,8 @@ html {
 .p-use__gideList {
   counter-reset: number;
   background: #F2F7F6;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-auto-flow: column;
   gap: 16px;
   justify-content: space-between;
   margin-top: 32px;
@@ -2125,14 +2121,18 @@ html {
     padding: 40px 167px;
   }
 }
+@media screen and (max-width: 767px) {
+  .p-use__gideList {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 .p-use__gideItems {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding-right: 16px;
-  width: calc((100% - 32px) / 3);
 }
 @media screen and (min-width: 1025px) {
   .p-use__gideItems {
@@ -2146,10 +2146,6 @@ html {
   .p-use__gideItems:nth-child(3) {
     padding-right: 16px;
   }
-}
-.p-use__gideItems:last-child {
-  padding-right: 0;
-  width: fit-content;
 }
 .p-use__gideItems:nth-child(3) .p-use__gideItemsInner:after {
   content: none;

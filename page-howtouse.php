@@ -47,7 +47,6 @@
           <li class="p-use__gideCancelStepItems">
             <span class="p-use__gideCancelStepItemsNum">STEP1</span>
             <p class="p-use__gideCancelStepItemsText">当サイトのお問い合わせページよりキャンセル申請を行ってください。</p>
-            <div class="p-use__gideCancelStepItemsCaption">お問い合わせページは<a href="">こちら</a></div>
           </li>
           <li class="p-use__gideCancelStepItems">
             <span class="p-use__gideCancelStepItemsNum">STEP2</span>
@@ -188,11 +187,11 @@
         </dl>
         <dl class="p-use__lawItems">
           <dt class="p-use__lawItemsTitle">メールアドレス</dt>
-          <dd class="p-use__lawItemsText">n-gateway@nayoro-tourism.com</dd>
+          <dd class="p-use__lawItemsText"><a href="mailto:info@hakunomori.com">info@hakunomori.com</a></dd>
         </dl>
         <dl class="p-use__lawItems">
-          <dt class="p-use__lawItemsTitle">サイト名</dt>
-          <dd class="p-use__lawItemsText">●●●●●●（●●●●●●）https://●●●●●●●●●●●</dd>
+          <dt class="p-use__lawItemsTitle">HAKUの森</dt>
+          <dd class="p-use__lawItemsText"><a href="https://www.hakunomori.com/" target="_blank">https://www.hakunomori.com/</a></dd>
         </dl>
         <dl class="p-use__lawItems">
           <dt class="p-use__lawItemsTitle">お支払い方法</dt>
@@ -202,12 +201,12 @@
               ※（現地決済）ペイペイ・エアペイ・クレジットカード
             </span>
             <img src="<?php echo get_template_directory_uri(); ?>/image/howtouse/howtouse-01.jpg" alt="支払い可能な決済方法についての画像" class="p-use__lawItemsImg">
-            現地決済のお問い合わせについては<a href="">お問い合わせフォーム</a>またはお電話にてお願いいたします。
+            現地決済のお問い合わせについてはお電話にてお願いいたします。
           </dd>
         </dl>
         <dl class="p-use__lawItems">
           <dt class="p-use__lawItemsTitle">キャンセル</dt>
-          <dd class="p-use__lawItemsText"><a href="">お問い合わせフォーム</a>やお電話にて手続きをお願いいたします。</dd>
+          <dd class="p-use__lawItemsText">お電話にて手続きをお願いいたします。</dd>
         </dl>
       </div>
     </div>

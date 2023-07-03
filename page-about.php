@@ -154,16 +154,19 @@
       </h2>
       <ul class="p-about__linksImageList">
         <li class="p-about__linksImageItems">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-08.jpg" alt="">
-          <p class="p-about__linksImageItemsText">スキー場</p>
+          <a href="http://www.nayoro.co.jp/piyashiri/top/" target="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-08.jpg" alt="名寄ピアシリスキー場">
+          </a>
         </li>
         <li class="p-about__linksImageItems">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-08.jpg" alt="">
-          <p class="p-about__linksImageItemsText">キャンプ場(カーリング)</p>
+          <a href="http://www.morino-kyukamura.jp/" target="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-08.jpg" alt="森の休暇村オートキャンプ場">
+          </a>
         </li>
         <li class="p-about__linksImageItems">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-08.jpg" alt="">
-          <p class="p-about__linksImageItemsText">観光協会</p>
+          <a href="https://nayoro-kankou.com/top/" target="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-08.jpg" alt="なよろ観光まちづくり協会">
+          </a>
         </li>
       </ul>
     </div>
