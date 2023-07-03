@@ -52,9 +52,6 @@
 
   &:nth-child(3) {
     padding-right: 0;
-    @include m.mq(pc) {
-      padding-right: 16px;
-    }
   }
 
   &:nth-child(3) .p-use__gideItemsInner:after {
@@ -103,7 +100,7 @@
     content: "";
     display: block;
     height: 0;
-    right: -24px;
+    right: -38px;
     position: absolute;
     width: 0;
   }

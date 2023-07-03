@@ -2142,11 +2142,6 @@ html {
 .p-use__gideItems:nth-child(3) {
   padding-right: 0;
 }
-@media screen and (min-width: 1025px) {
-  .p-use__gideItems:nth-child(3) {
-    padding-right: 16px;
-  }
-}
 .p-use__gideItems:nth-child(3) .p-use__gideItemsInner:after {
   content: none;
 }
@@ -2191,7 +2186,7 @@ html {
   content: "";
   display: block;
   height: 0;
-  right: -24px;
+  right: -38px;
   position: absolute;
   width: 0;
 }
