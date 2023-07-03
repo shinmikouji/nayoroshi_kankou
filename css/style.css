@@ -2190,6 +2190,11 @@ html {
   position: absolute;
   width: 0;
 }
+@media screen and (max-width: 767px) {
+  .p-use__gideItemsInner:after {
+    right: -23px;
+  }
+}
 
 .p-use__gideItemsText {
   font-size: 1.4rem;

@@ -103,6 +103,9 @@
     right: -38px;
     position: absolute;
     width: 0;
+    @include m.mq(sp) {
+      right: -23px;
+    }
   }
 }
 
