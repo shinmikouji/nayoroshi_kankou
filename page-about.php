@@ -37,7 +37,7 @@
       <div class="c-titleArea__icon">
         <img src="<?php echo get_template_directory_uri(); ?>/image/about/icon-01.svg" alt="アクティビティについてに関してのアイコン">
       </div>
-      <h1 class="c-titleArea__title--black">GYDE</h1>
+      <h1 class="c-titleArea__title--black">GUIDE</h1>
       <p class="c-titleArea__subTitle--black">ガイド紹介</p>
       <div class="p-about__guideItem">
         <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-04.jpg" alt="" class="p-about__guideItemImage">
@@ -160,12 +160,12 @@
         </li>
         <li class="p-about__linksImageItems">
           <a href="http://www.morino-kyukamura.jp/" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-08.jpg" alt="森の休暇村オートキャンプ場">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-09.jpg" alt="森の休暇村オートキャンプ場">
           </a>
         </li>
         <li class="p-about__linksImageItems">
           <a href="https://nayoro-kankou.com/top/" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-08.jpg" alt="なよろ観光まちづくり協会">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/img-10.jpg" alt="なよろ観光まちづくり協会">
           </a>
         </li>
       </ul>
