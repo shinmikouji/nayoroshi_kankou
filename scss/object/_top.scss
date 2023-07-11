@@ -34,11 +34,14 @@
   background-repeat: no-repeat;
   display: block;
   height: 185px;
-  left: 55%;
+  left: 51%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 162px;
+  @include m.mq(sp) {
+    left: 55%;
+  }
 }
 
 /* Slickのドットのスタイル */
