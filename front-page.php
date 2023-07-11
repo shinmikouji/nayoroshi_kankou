@@ -4,8 +4,7 @@
   <section class="p-hero">
     <div class="p-hero__slider">
       <div class="p-hero__item">
-        <img class="c-display--pc" src="<?php echo get_template_directory_uri(); ?>/image/top/slider-01.jpg" alt="">
-        <img class="c-display--sp" src="<?php echo get_template_directory_uri(); ?>/image/top/slider-sp-01.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/top/slider-01.jpg" alt="">
       </div>
       <div class="p-hero__item">
         <img src="<?php echo get_template_directory_uri(); ?>/image/top/slider-02.jpg" alt="">
