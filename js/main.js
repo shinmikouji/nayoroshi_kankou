@@ -32,7 +32,7 @@ jQuery(function ($) {
   });
 
   $(".p-hero__slider").on('init', function() {
-    $('.slick-slide[data-slick-index="0"]').addClass("zoom-animation");
+    $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
   }).slick({
       autoplay: true,
       fade: true,
